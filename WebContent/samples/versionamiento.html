@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Index - BLUE </title>
+		<link rel="shortcut icon" type="image/png" href="https://rawgit.com/vochy023/b-lue/master/images/bac_icon.png" sizes="16x16"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" href="../g-libreries/fonts/bel-main-fonts.css">
+		<link rel="stylesheet" href="../bel-main-style.css"> 
+		<script type="text/javascript" src="../resources/js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../resources/js/zebra_datepicker.min.js"></script> 
+		<script type="text/javascript" src="../resources/js/bel-main-scripts.js"></script> 
+		<script type="text/javascript" src="blue_version_history_p.js"></script> 
+		
+	</head>
+	<body>
+		<div class="grid-container">
+			<div class="grid-row">
+				<div class="col-10 padding-reset">
+					<div class="grid-row">
+						<div class="col-12 margin-bottom-m padding-reset">
+							<h1 class="bel-typography bel-typography-h1">Versionamiento de BLUE</h1>
+						</div>
+						<div class="col-12 margin-bottom-s padding-reset">
+							<div class="status-tag positive-medium">
+								<p class="status-tag__txt font-weight-semibold margin-left-xs" id="versionText">Version Actual: </p>
+							</div>
+						</div>
+					
+						<div class="col-12 padding-reset margin-bottom-m margin-top-m">
+							<div class="bel-border-top"></div>
+						</div>
+				
+						<div class="col-12 margin-bottom-l padding-reset">
+							<h3 class="bel-typography bel-typography-h3">Ultima actualización</h3>
+						</div>
+						
+						<div class="col-12 margin-bottom-l padding-reset">
+							<div class="bel-card bel-full-height" >
+								<div class="grid-row">  
+									<div class="col-12">
+									    <div>
+										   <label class="bel-typography bel-typography-label">Blue: 2.0.1</label>
+										</div>
+										<div>
+											<label class="bel-typography bel-typography-label">Pase: CRI-029512</label>
+										</div>
+										<div>
+											<label class="bel-typography bel-typography-label">Cambios de BLUE:</label>
+											<div class="grid-row">
+			<div class="col-12">
+				<ul class="bel-list">
+					<li class="bel-list__unordered-li">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+					</li>
+					<li class="bel-list__unordered-li">Texto
+					</li>
+					<li class="bel-list__unordered-li">Texto
+					</li>
+				</ul>
+			</div>
+		</div>
+										</div>
+									</div>
+									
+									
+									
+								</div>	
+							</div>
+						</div>
+					
+						<div class="col-12 padding-reset margin-bottom-m margin-top-m">
+							<div class="bel-border-top"></div>
+						</div>
+				
+						<div class="col-12 margin-bottom-l padding-reset">
+							<h3 class="bel-typography bel-typography-h3">Historico de cambios</h3>
+						</div>
+					</div>
+				</div>
+					<div class="col-2 padding-reset">
+						<!--Menu interno de botones -->
+						
+						<ul>
+ <li class="menu-item-has-children">Item 1</li>
+   <ul class="sub-menu">
+     <li>Sub Item 1</li>
+     <li>Sub Item 2</li>
+     <li class="menu-item-has-children">Sub Item 3</li>
+       <ul class="sub-menu">
+         <li>Sub Sub Item 1</li>
+         <li>Sub Sub Item 2</li>
+         <li>Sub Sub Item 3</li>
+         <li>Sub Sub Item 4</li>
+         <li>Sub Sub Item 5</li>
+      </ul>
+   <li>Sub Item 4</li>
+   <li>Sub Item 5</li>
+</ul>
+					</div>
+				</div>
+			</div>
+			<script>
+		$BLUEJQuery( document ).ready(function(){
+
+
+function getComponentVersion(componentName){
+	var version="0.0";
+	$BLUEJQuery(versionamientoBlue.Versionamiento.VersionActual.Componentes).each(function () {
+		if(this.Nombre==componentName){
+			version=this.Version;
+		}	     
+	});
+
+return version;
+}
+$BLUEJQuery("#versionText").html($BLUEJQuery("#versionText").text()+" "+getComponentVersion("Botones"));
+
+
+		});
+	</script>
+			
+	</body>
+</html>
