@@ -54,13 +54,20 @@
 						</div>
 						<div class="grid-row"> <!--ejemplo de código de como hacerlo -->
 							<div class="col-6 margin-top-m">
-							  <h1 class="bel-typography bel-typography-h4">HTML</h1>
+							
+							  <input type="checkbox"  class='eligible-box' value="checkboxHTML" id="checkboxHTML" onchange="changeCard()"/>
+								<label class="eligible-box-label bel-truncate-text bel-tooltip-generic" for="checkboxHTML">HTML</label>	
+								<span class="bel-tooltip-generic-text bel-tooltip-generic-text__down ">Click para ocultar o mostrar el código de la sección posterior.</span>
 							</div>
 							<div class="col-6 margin-top-m">
-							  <h1 class="bel-typography bel-typography-h4">JS</h1>
+							
+								<input type="checkbox"  class='eligible-box' value="checkboxJS" id="checkboxJS" onchange="changeCard()"/>
+								<label class="eligible-box-label bel-truncate-text bel-tooltip-generic" for="checkboxJS">JS</label>	
+								<span class="bel-tooltip-generic-text bel-tooltip-generic-text__down">Click para ocultar o mostrar el código de la sección posterior.</span>
+							
 							</div>
 							
-							<div class="col-6 ">
+							<div class="col-6" id="cardHTML">
 								<div id="tabs_btn_1-html" class="bel-card bel-full-height" >
 									<div class="grid-row">
 									  <div class="col-6">
@@ -81,13 +88,13 @@
 										<button class="button_clip bel-auxiliary-component" data-clipboard-target="#btn_2"><span class="icon-main icon-main__xs icon-copy"></span><span class="bel-space-left-s">Copiar c&oacute;digo</span></button>
 									  </div>
 									  <div class="bel-col-12">
-										<pre style="margin:0;"><code class="language-markup" id="btn_2">&lt;button class="bel-btn bel-btn-primary bel-btn-primary-disabled">Aceptar&lt;/button></code></pre>
+										<p style="margin:0;"><code class="language-markup" id="btn_2">&lt;button class="bel-btn bel-btn-primary bel-btn-primary-disabled">Aceptar&lt;/button></code></p>
 									  </div>
 									</div>
 								</div>
 							</div>
 							
-							  <div class="col-6 ">
+							  <div class="col-6" id="cardJS">
 								<div id="tabs_btn_1-html" class="bel-card bel-full-height" >
 									<div class="grid-row">
 									  
@@ -150,8 +157,8 @@
 			</div>
 			<script>
 		$BLUEJQuery( document ).ready(function(){
-
-
+$BLUEJQuery("#checkboxHTML").prop("checked",true);
+$BLUEJQuery("#checkboxJS").prop("checked", true);
 function getComponentVersion(componentName){
 	var version="0.0";
 	$BLUEJQuery(versionamientoBlue.Versionamiento.VersionActual.Componentes).each(function () {
@@ -166,6 +173,28 @@ $BLUEJQuery("#versionText").html($BLUEJQuery("#versionText").text()+" "+getCompo
 
 
 		});
+		function changeCard(){
+		var tagHTML= $BLUEJQuery("#checkboxHTML");
+		var tagJS= $BLUEJQuery("#checkboxJS");
+		
+		if(tagHTML.prop("checked") && tagJS.prop("checked")){
+		$BLUEJQuery("#cardHTML").removeClass("col-12 display-none").addClass("col-6");
+		$BLUEJQuery("#cardJS").removeClass("col-12 display-none").addClass("col-6");
+		
+		}
+		else if(tagHTML.prop("checked") && !tagJS.prop("checked")){
+		$BLUEJQuery("#cardHTML").removeClass("col-6 display-none").addClass("col-12");
+		$BLUEJQuery("#cardJS").removeClass("col-12 col-6").addClass("display-none");
+		}
+		else if(!tagHTML.prop("checked") && tagJS.prop("checked")){
+		$BLUEJQuery("#cardHTML").removeClass("col-12 col-6").addClass("display-none");
+		$BLUEJQuery("#cardJS").removeClass("col-6 display-none").addClass("col-12");
+		}else{
+		$BLUEJQuery("#cardHTML").removeClass("col-12 col-6").addClass("display-none");
+		$BLUEJQuery("#cardJS").removeClass("col-12 col-6").addClass("display-none");
+		}
+		
+		}
 	</script>
 			
 	</body>
