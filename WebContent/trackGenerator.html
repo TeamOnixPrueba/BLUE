@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <title> BLUE - Generator </title>
+   <link rel="shortcut icon" type="image/png" href="https://rawgit.com/vochy023/b-lue/master/images/bac_icon.png" sizes="16x16"/>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+     <!--
+		<link rel="stylesheet" href="https://blue.baccredomatic.com/bel-main-style.css">
+		<script type="text/javascript" src="https://blue.baccredomatic.com/js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="https://blue.baccredomatic.com/js/zebra_datepicker.min.js"></script>
+		<script type="text/javascript" src="https://blue.baccredomatic.com/js/bel-main-scripts.js"></script>
+      -->
+
+
+		<link rel="stylesheet" href="g-libreries/fonts/bel-main-fonts.css">
+		<link rel="stylesheet" href="bel-main-style.css">
+		<script type="text/javascript" src="resources/js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="resources/js/zebra_datepicker.min.js"></script>
+		<script type="text/javascript" src="resources/js/bel-main-scripts.js"></script>
+
+
+  </head>
+
+  <body>
+
+    <style>
+
+      .dragHover:hover {
+        color: #1075bb;
+        cursor: pointer;
+      }
+
+
+      .drop-space-border {
+        padding: 20px;
+        border: 1px dashed #4d4d4f;
+        text-align: center;
+      }
+
+      td div div:hover{
+        color: black;
+        background: black;
+        border-color: black;
+        opacity: 1;
+        cursor: pointer;
+      }
+
+    </style>
+
+    <div class="bel-grid-container bel-space-top-xl">
+
+      <div class="bel-grid-row ">
+        <div class="bel-col-12 bel-space-bottom-m">
+          <h3 class="bel-typography bel-typography-h3">Generador de código para "Tracking vertical"</h3>
+        </div>
+      </div>
+
+
+      <div id="goalsAccountAdmin" class="bel-grid-row bel-space-bottom-s bel-full-height">
+    		<div class="bel-col-4 bel-padding-right-xs bel-full-height bel-display-table-cell bel-float-none bel-vertical-align-top">
+    			<div class="bel-card bel-full-height bel-display-table">
+    				<div class="bel-grid-row bel-space-bottom-m bel-space-top-xs">
+    					<div class="bel-col-12">
+                  <div class="bel-space-bottom-s"><p class="bel-typography bel-typography-p"><b>Piezas</b> del componente</p></div>
+                  <ul class="bel-list">
+                    <li id="track_step_med" class="dragHover bel-list__unordered-li" draggable="true" ondragstart="drag(event)" ondragend="undrag();">Step centrado</li>
+                    <li id="track_step_top" class="dragHover bel-list__unordered-li" draggable="true" ondragstart="drag(event)" ondragend="undrag();">Step superior</li>
+                    <li id="track_step_bot" class="dragHover bel-list__unordered-li" draggable="true" ondragstart="drag(event)" ondragend="undrag();">Step inferior</li>
+                    <li id="track_bot_line"   class="dragHover bel-list__unordered-li" draggable="true" ondragstart="drag(event)" ondragend="undrag();">Línea inferior</li>
+                    <li id="track_top_line"   class="dragHover bel-list__unordered-li" draggable="true" ondragstart="drag(event)" ondragend="undrag();">Línea superior</li>
+                  </ul>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+
+    		<div class="bel-col-8 bel-padding-left-xs bel-full-height bel-display-table-cell bel-float-none bel-vertical-align-top">
+    			<div class="bel-card bel-full-height bel-display-table">
+
+
+            <div class="bel-grid-row">
+              <div class="bel-col-4">
+                <div id="dropSpace" class="bel-space-bottom-m drop-space-border" ondrop="drop(event)" ondragover="allowDrop(event)"><p id="dropSpaceText" class="bel-typography bel-typography-p"><b>Arrastre una pieza aquí</b> para agregar al componente</p></div>
+              </div>
+              <div class="bel-col-4">
+                <table id="trackTable" style="height:56px; margin-bottom:5px" class="bel-table">
+                  <tbody id="tbodytrackTable">
+                    <div class="bel-space-bottom-s bel-position-center"><p class="bel-typography bel-typography-p">Componente:</p></div>
+                    <tr id="visualResultId" class="bel-table_row bel-table_border-column">
+                      <td class="bel-full-height bel-display-table-cell">
+                        <div class="bel-position-relative bel-full-height"></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div style="text-align:center;"><h6 class="bel-typography bel-typography-h6">Click sobre una <b>pieza</b> para editarla</h6></div>
+              </div>
+              <div class="bel-col-4 bel-position-center">
+                <button class="bel-btn bel-btn-primary bel-btn-primary-active" onclick="cleanAll();">Limpiar todo</button>
+              </div>
+            </div>
+
+            <div class="bel-grid-row">
+              <div class="bel-col-12">
+                <div class="bel-space-bottom-s"><p class="bel-typography bel-typography-p">Código fuente:</p></div>
+              </div>
+            </div>
+
+            <div class="bel-grid-row">
+              <div class="bel-col-12 bel-space-bottom-m">
+                  <textarea id="codeResultId" class="bel-textarea bel-textarea-xl" style="text-align:left;" disabled></textarea>
+              </div>
+            </div>
+
+            <div class="bel-grid-row">
+              <div class="bel-col-12">
+                <div class="bel-space-bottom-s"><p class="bel-typography bel-typography-p">Opciones de la pieza:</p></div>
+              </div>
+            </div>
+
+            <div class="bel-grid-row">
+              <div class="bel-col-12">
+                <div id="opcionsDiv" class="bel-grid-row" style="background:#bebebe; padding:10px 0px 10px 0px">
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+    </div>
+  </body>
+
+  <script>
+
+
+    var circleSizeOptions = '<option value="-1" disabled selected>Tamaño</option><option value="track_step-m">Tamaño M</option><option value="track_step-s">Tamaño S</option>';
+    var lineTypeOptions = '<option value="-1" disabled selected>Tipo</option><option value="border-solid-left">Solida</option><option value="border-dashed-left">Punteada</option>';
+    var circleColors = ['track__bg-positive-m','track__bg-attention-l','track__bg-critical-l','track__bg-interaction-l','track__bg-neutral-m','track__bg-neutral-h','track__bg-black-l'];
+    var opacityOptions = '<option value="-1" disabled selected>Opacidad</option><option value="false">Opaco</option><option value="true">Transparente</option>';
+    var lineColors =   [  'track__bc-positive-m','track__bc-attention-l','track__bc-critical-l','track__bc-interaction-l','track__bc-neutral-m','track__bc-neutral-h','track__bc-black-l'];
+    var circleColorOptions = '<option value="-1" disabled selected>Color</option>';
+    var lineColorOptions = '<option value="-1" disabled selected>Color</option>';
+    var componetsMap = new Map();
+    var selectedElement;
+
+    for (var i = 0; i < circleColors.length; i++) {
+      circleColorOptions += '<option value="'+circleColors[i]+'">'+circleColors[i].substring(10)+'</option>';
+    }
+
+    for (var i = 0; i < lineColors.length; i++) {
+      lineColorOptions += '<option value="'+lineColors[i]+'">'+lineColors[i].substring(10)+'</option>';
+    }
+
+    var comboTrackingColor = '<div class="bel-col-4"><select id="comboTrackingColor" onchange="setTrackingColor(this, true);">'+circleColorOptions+'</select></div>';
+    var comboTrackingSize = '<div class="bel-col-4"><select id="comboTrackingSize" onchange="setTrackingSize(this);">'+circleSizeOptions+'</select></div>';
+    var comboLineType = '<div class="bel-col-4"><select id="comboLineType" onchange="setTrackingLineType(this);">'+lineTypeOptions+'</select></div>';
+    var comboLineColor =  '<div class="bel-col-4"><select id="comboLineColor" onchange="setTrackingColor(this, false);">'+lineColorOptions+'</select></div>';
+    var comboOpacity =  '<div class="bel-col-4"><select id="comboOpacity" onchange="setOpacity();">'+opacityOptions+'</select></div>';
+    var iconClass =  '<div class="bel-col-8 bel-space-top-m"><input id="iconId" class="bel-input bel-input-l bel-input-default" type="text" placeholder="Digite o pegue el código para un icono" style="width:328px"></div><div class="bel-col-4 bel-space-top-m"><button class="bel-btn bel-btn-primary bel-btn-primary-active" onclick="setIcon();">Editar icono</button></div><div class="bel-col-4"><h5 class="bel-typography bel-typography-h5">Dejar vacio para eliminar</h5></div>';
+
+    componetsMap.set( 'track_step_options', comboTrackingSize + comboTrackingColor + iconClass);
+    componetsMap.set( 'track_step_med','<div class="track_step track_step-med track_step-m track__bg-positive-m"></div>' );
+    componetsMap.set( 'track_step_top','<div class="track_step track_step-top track_step-m track__bg-positive-m"></div>' );
+    componetsMap.set( 'track_step_bot','<div class="track_step track_step-bot track_step-m track__bg-positive-m"></div>' );
+    componetsMap.set( 'track_border_options', comboLineColor + comboLineType + comboOpacity);
+    componetsMap.set( 'track_bot_line','<div class="track_border track_border-bot border-solid-left track__bc-positive-m"></div>' );
+    componetsMap.set( 'track_top_line','<div class="track_border track_border-top border-solid-left track__bc-positive-m"></div>' );
+
+
+    function setOpacity(){
+      if($BLUEJQuery('#comboOpacity').val() == 'true'){
+        $BLUEJQuery('.'+selectedElement).addClass('track__opacity');
+      }else{
+        $BLUEJQuery('.'+selectedElement).removeClass('track__opacity');
+      }
+      $BLUEJQuery('#codeResultId').val($BLUEJQuery('td')[0].outerHTML);
+    }
+
+    function openOptions(e){
+      selectedElement = $BLUEJQuery(e).prop("classList")[1];
+      var code = componetsMap.get($BLUEJQuery(e).prop("classList")[0]+'_options');
+      $BLUEJQuery('#opcionsDiv').empty().append(code);
+      blueSelect();
+    }
+
+    function blueSelect(){
+      $BLUEJQuery('select').each(function (index, value) {
+        $BLUEJQuery('#'+$BLUEJQuery(this).attr('id')).blueSelect("s");
+      });
+    }
+
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+      $BLUEJQuery('#dropSpace').css("border", "1px dashed #1075bb");
+      $BLUEJQuery('#dropSpaceText').css("color", "#1075bb");
+    }
+
+    function undrag(){
+      $BLUEJQuery('#dropSpace').css("border", "1px dashed #4d4d4f");
+      $BLUEJQuery('#dropSpaceText').css("color", "#4d4d4f");
+      $BLUEJQuery('td div div').click(function(){openOptions(this)});
+    }
+
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      $BLUEJQuery('#'+data).hide();
+      $BLUEJQuery('#visualResultId td div:eq(0)').append(componetsMap.get(data));
+      $BLUEJQuery('#codeResultId').val($BLUEJQuery('td')[0].outerHTML);
+    }
+
+    function setIcon(){
+      var icon = $BLUEJQuery('#iconId').val();
+      $BLUEJQuery('.'+selectedElement+':eq(0)').empty();
+      if(iconClass != ''){
+        $BLUEJQuery('.'+selectedElement).append(icon);
+      }
+      $BLUEJQuery('#codeResultId').val($BLUEJQuery('td')[0].outerHTML);
+    }
+
+    function setTrackingColor(combo, tracking){
+      var colorClass = $BLUEJQuery('#'+combo.id).find('option:selected').val();
+      var c = circleColors;
+      var l = lineColors;
+      if(tracking == true){
+        $BLUEJQuery('.'+selectedElement).removeClass(c[0]+' '+c[1]+' '+c[2]+' '+c[3]+' '+c[4]+' '+c[5]+' '+c[6]).addClass(colorClass);
+        currentBackground = colorClass;
+      }else {
+        $BLUEJQuery('.'+selectedElement).removeClass(l[0]+' '+l[1]+' '+l[2]+' '+l[3]+' '+l[4]+' '+l[5]+' '+l[6]).addClass(colorClass);
+        currentColor = colorClass;
+      }
+      $BLUEJQuery('#codeResultId').val($BLUEJQuery('td')[0].outerHTML);
+    }
+
+    function setTrackingSize(combo){
+      var sizeClass = $BLUEJQuery('#'+combo.id).find('option:selected').val();
+      $BLUEJQuery('.'+selectedElement).removeClass('track_step-s track_step-m').addClass(sizeClass);
+      $BLUEJQuery('#codeResultId').val($BLUEJQuery('td')[0].outerHTML);
+    }
+
+    function setTrackingLineType(combo){
+      var typeClass = $BLUEJQuery('#'+combo.id).find('option:selected').val();
+      $BLUEJQuery('.'+selectedElement).removeClass('border-solid-left border-dashed-left').addClass(typeClass);
+      $BLUEJQuery('#codeResultId').val($BLUEJQuery('td')[0].outerHTML);
+    }
+
+    function cleanAll(){
+      $BLUEJQuery('#opcionsDiv').empty().html('<h5 class="bel-typography bel-typography-h5" style="margin-left:15px">Haga click sobre una pieza en el <b>Componente</b> para editarla</h5>');
+      $BLUEJQuery('#visualResultId td div:eq(0)').empty();
+      $BLUEJQuery('#codeResultId').val('');
+      $BLUEJQuery('li').show();
+    }
+
+    cleanAll();
+
+</script>
+
+</html>

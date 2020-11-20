@@ -1,0 +1,35 @@
+<!-- 
+	CRI-026739-Onix-26022019
+	Archivo que nace para unificar y minimizar, por medio de Apache Ant, 
+	en un sólo archivo los diferentes .js de los componentes 
+	y plugins creados en BLUE.
+	
+	De momento los pasos que sigue son:
+	1-Eliminar el archivo "/resources/js/bel-main-scripts.js"
+	2-Concatenar en un solo archivo, con ese mismo nombre, los 
+	archivos indicados en el "fileList". (Si el archivo no existe, 
+	lo crea. Pone un salto de linea entre el contenido de cada archivo)
+	3-Por ultimo, minifica el archivo que acaba de unificar.
+	
+	Parametro "nomunge" es para definir solo minizado (sin ofuscar)
+ -->
+
+<project  name="concat-blue-js-files" basedir="." default="unify_js">
+	<target name="unify_js">
+			<delete file="/resources/js/bel-main-scripts.js"/>
+			
+			<concat destfile="resources/js/bel-main-scripts.js" force="yes" fixlastline="yes">
+			  <filelist dir="resources/js/components/" files="bel-common-scripts.js,bel-table.js,bel-loading-bar.js,bel-drag-and-drop.js, bel-select.js, bel-slider.js"/>
+			</concat>
+	</target>
+	
+	<target name="Minify-javascript-file">
+		<java jar="resources/libreries/yuicompressor-2.4.7.jar" fork="true">
+			<arg line="--nomunge"/>
+			<arg value="resources/js/bel-main-scripts.js"/>
+			<arg value="-o"/>
+			<arg value="resources/js/bel-main-scripts.js"/>
+		</java>
+	</target>
+</project>
+

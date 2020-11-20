@@ -4,32 +4,26 @@
    <title> Index - BLUE </title>
    <link rel="shortcut icon" type="image/png" href="https://rawgit.com/vochy023/b-lue/master/images/bac_icon.png" sizes="16x16"/>
      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-	 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+   
      <link rel="stylesheet" href="https://blue.baccredomatic.com/bel-main-style.css">
      <script type="text/javascript" src="https://blue.baccredomatic.com/js/jquery-3.3.1.min.js"></script>
      <script type="text/javascript" src="https://blue.baccredomatic.com/js/zebra_datepicker.min.js"></script>
      <script type="text/javascript" src="https://blue.baccredomatic.com/js/bel-main-scripts.js"></script>
-     
-	 <!-- buidbranch -->
 
-<!--    <link rel="stylesheet" href="g-libreries/fonts/bel-main-fonts.css">
-     <link rel="stylesheet" href="bel-main-style.css">
+      <!--buidbranch --> 
+	 <!--
+     <link rel="stylesheet" href="g-libreries/fonts/bel-main-fonts.css">
+     <link rel="stylesheet" href="bel-main-style.css"> 
      <script type="text/javascript" src="../WebContent/resources/js/jquery-3.3.1.min.js"></script>
-     <script type="text/javascript" src="../WebContent/resources/js/zebra_datepicker.min.js"></script>
-     <script type="text/javascript" src="../WebContent/resources/js/bel-main-scripts.js"></script>
- -->
+     <script type="text/javascript" src="../WebContent/resources/js/zebra_datepicker.min.js"></script> 
+     <script type="text/javascript" src="../WebContent/resources/js/bel-main-scripts.js"></script> 
+	 -->
 
     <style media="screen">
 
-      html{
-        scroll-behavior: smooth;
-        margin: -8px;
-      }
 
-      body {
-        display:inline-flex;
-      }
+
 
       .blue-menu-title {
         margin:20px 0;
@@ -97,11 +91,11 @@
 
       .blue-index-menu-hidden-btn {
         position: fixed;
-        z-index: 2;
+        z-index: 0;
         color: white;
         background: #282e38;
         border-radius: 10px;
-        left: 235px;
+        left: 20%;
         top: 50%;
         text-align: right;
         padding: 10px 5px 10px 20px;
@@ -116,7 +110,9 @@
 </head>
 
    <body>
-
+<div class="grid-container" style="max-width:100%">
+		<div class="grid-row">
+			<div class="col-3" id="columnMenu">
      <div id="hiddenMenuBtn" onclick="hiddenMenu()" class="bel-icon-back-xxs blue-index-menu-hidden-btn "></div>
 
      <div id="blueMenu" class="blue-menu">
@@ -130,6 +126,7 @@
 				<div id="resultListMenu">
 					 <a class="blue-index-menu-option" href="#blue_menu_option_14"><div>Adjuntar archivos</div></a>
 					 <a class="blue-index-menu-option" href="#blue_menu_option_19"><div>Alineado vertical</div></a>
+					 <a class="blue-index-menu-option" href="#blue_menu_option_24"><div>Caja elegible</div></a>
 					 <a class="blue-index-menu-option" href="#blue_menu_option_23"><div>Cards alineados horizontalmente</div></a>
 					 <a class="blue-index-menu-option" href="#blue_menu_option_11"><div>Animaciones</div></a>
 					 <a class="blue-index-menu-option" href="#blue_menu_option_17"><div>Barra de progreso	</div></a>
@@ -154,91 +151,94 @@
 			  </div>
 			</div>
 		</div>
+	</div>
+	<div class="col-9" id="ColumnCuerpo">
+	<div class="grid-container">
 
-	<div class="bel-grid-container" style="margin-left:100px;">
-
-    <div class="bel-grid-row" style="margin:10px 0;" id="inicio">
-			<div class="bel-col-12">
+    <div class="grid-row" id="inicio">
+			<div class="col-12">
 				<h1 class="bel-typography bel-typography-h1" style="color:#1075bb;">Index de BLUE</h1>
 			</div>
 		</div>
-
+		
+	
+		
 		<!--Tipografia-->
-		<div class="bel-grid-row" id="blue_menu_option_01">
-			<div class="bel-col-12">
+		<div class="grid-row" id="blue_menu_option_01">
+			<div class="col-12">
 				<div class="blue-menu-title">
           <h1 class="bel-typography bel-typography-h1">Tipografía</h1>
         </div>
 			</div>
 		</div>
 
-		<div class="bel-grid-row">
-			<div class="bel-col-12">
+		<div class="grid-row">
+			<div class="col-12">
 				<h1 class="bel-typography bel-typography-h1">Título h1</h1>
 			</div>
 		</div>
 
-		<div class="bel-grid-row">
-			<div class="bel-col-12">
+		<div class="grid-row">
+			<div class="col-12">
 				<h2 class="bel-typography bel-typography-h2">Título h2</h2>
 			</div>
 		</div>
 
-		<div class="bel-grid-row">
-			<div class="bel-col-12">
+		<div class="grid-row">
+			<div class="col-12">
 				<h3 class="bel-typography bel-typography-h3">Título h3</h3>
 			</div>
 		</div>
 
-		<div class="bel-grid-row">
-			<div class="bel-col-12">
+		<div class="grid-row">
+			<div class="col-12">
 				<h4 class="bel-typography bel-typography-h4">Título h4</h4>
 			</div>
 		</div>
 
-		<div class="bel-grid-row">
-			<div class="bel-col-12">
+		<div class="grid-row">
+			<div class="col-12">
 				<h5 class="bel-typography bel-typography-h5">Título h5</h5>
 			</div>
 		</div>
 
-		<div class="bel-grid-row">
-			<div class="bel-col-12">
+		<div class="grid-row">
+			<div class="col-12">
 				<h6 class="bel-typography bel-typography-h6">Título h6</h6>
 			</div>
 		</div>
 
-		<div class="bel-grid-row">
-			<div class="bel-col-12">
+		<div class="grid-row">
+			<div class="col-12">
 				<label class="bel-typography bel-typography-label">Label
 					Banca en línea</label>
 			</div>
 		</div>
 
-		<div class="bel-grid-row">
-			<div class="bel-col-12">
+		<div class="grid-row">
+			<div class="col-12">
 				<p class="bel-typography bel-typography-p">Esto es una parrafo
 					de BLUE</p>
 			</div>
 		</div>
 
-		<div class="bel-grid-row">
-			<div class="bel-col-12">
+		<div class="grid-row">
+			<div class="col-12">
 				<a class="bel-typography bel-typography-link">Link Banca
 					en Línea</a>
 			</div>
 		</div>
 
-		<div class="bel-grid-row">
-			<div class="bel-col-12">
+		<div class="grid-row">
+			<div class="col-12">
 				<a class="bel-typography bel-typography-link bel-link_color-contextual bel-typography_size-m">Link Banca
 					en Línea negro</a>
 			</div>
 		</div>
 
     <!-- destacado -->
-    <div class="bel-grid-row" id="blue_menu_option_02">
-      <div class="bel-col-12">
+    <div class="grid-row" id="blue_menu_option_02">
+      <div class="col-12">
 				<div class="blue-menu-title">
           <h1 class="bel-typography bel-typography-h1">Destacado</h1>
         </div>
@@ -269,8 +269,8 @@
 		<!--Menus -->
 <br>
 
-<div class="bel-grid-row" id="blue_menu_option_03">
-			<div class="bel-col-12">
+<div class="grid-row" id="blue_menu_option_03">
+			<div class="col-12">
     <div class="blue-menu-title">
       <h1 class="bel-typography bel-typography-h1">Menús</h1>
 			</div>
@@ -278,8 +278,8 @@
 </div>
 
 		<!--Menu desplegable-->
-		<div class="bel-grid-row">
-			<div class="bel-col-12">
+		<div class="grid-row">
+			<div class="col-12">
 				<!-- El caption se parametriza desde la funcion "createMenuHead" -->
 					<div id="MenuHeadId"></div>
 				<div id="menuCntId">
@@ -323,8 +323,8 @@
 
 
 		<!--Menu comparativo-->
-		<div class="bel-grid-row">
-			<div class="bel-col-12">
+		<div class="grid-row">
+			<div class="col-12">
 			<div id="belComparativeMenuID" class="bel-display-none">
 				<ul id="comparativeMenuExample1">
 					<li>
@@ -465,8 +465,8 @@
 
 
 		<!-- Botones -->
-    <div class="bel-grid-row" id="blue_menu_option_04">
-			<div class="bel-col-12">
+    <div class="grid-row" id="blue_menu_option_04">
+			<div class="col-12">
         <div class="blue-menu-title">
           <h1 class="bel-typography bel-typography-h1">Botones</h1>
         </div>
@@ -474,53 +474,56 @@
 		</div>
 
 		<!-- BotÃ³n primario -->
-		<div class="bel-grid-container">
-			<div class="bel-grid-row">
-				<div class="bel-col-3">
-					<button id="Button1" class="bel-btn bel-btn-primary btn-pressed loading-icon-active">Aceptar</button>
-				</div>
-				<div class="bel-col-3">
-					<button id="Button2" class="bel-btn bel-btn-primary btn-pressed btn-pressed__check">Aceptar</button>
-				</div>
-				<div class="bel-col-3">
-					<button id="Button3" class="bel-btn bel-btn-primary bel-btn-primary-disabled">Aceptar</button>
-				</div>
+		<div class="grid-container">
+            <div class="grid-row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 bel-space-top-m">
+                    <button id="Button3" class="bel-btn bel-btn-primary bel-btn-primary-disabled btn-block">Elemento 1</button>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 bel-space-top-m">
+                    <button id="Button3" class="bel-btn bel-btn-primary bel-btn-primary-disabled btn-block">Elemento 2</button>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 bel-space-top-m">
+                    <button id="Button3" class="bel-btn bel-btn-primary bel-btn-primary-disabled">Elemento 3</button>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 bel-space-top-m">
+                    <button id="Button3" class="bel-btn bel-btn-primary bel-btn-primary-disabled">Elemento 4</button>
+                </div>
 			</div>
 		</div>
 <br>
 
 
 		<!-- BotÃ³n predeterminado -->
-		<div class="bel-grid-container">
-			<div class="bel-grid-row">
-				<div class="bel-col-3">
+		<div class="grid-container">
+			<div class="grid-row">
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 bel-space-top-m">
 					<button id="Button4" class="bel-btn bel-btn-default bel-btn-default-active">Cancelar</button>
 				</div>
-				<div class="bel-col-3">
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 bel-space-top-m">
 					<button id="Button5" class="bel-btn bel-btn-default btn-pressed loading-icon-neutral">Cancelar</button>
 				</div>
-				<div class="bel-col-3">
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 bel-space-top-m">
 					<button id="Button6" class="bel-btn bel-btn-default btn-pressed btn-pressed__check">Cancelar</button>
 				</div>
-				<div class="bel-col-3">
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 bel-space-top-m">
 					<button id="Button7" class="bel-btn bel-btn-default bel-btn-default-disabled">Cancelar</button>
 				</div>
 			</div>
 		</div>
 
 		<!-- Boton secundario -->
-		<div class="bel-grid-container">
-			<div class="bel-grid-row bel-space-top-m">
-				<div class="bel-col-3">
+		<div class="grid-container">
+			<div class="grid-row bel-space-top-m">
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 bel-space-top-m">
 					<button id="Button8" class="bel-btn bel-btn-secondary bel-btn-secondary-active">Aceptar</button>
 				</div>
-				<div class="bel-col-3">
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 bel-space-top-m">
 					<button id="Button9" class="bel-btn bel-btn-secondary btn-pressed loading-icon-neutral">Aceptar122</button>
 				</div>
-				<div class="bel-col-3">
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 bel-space-top-m">
 					<button id="Button10" class="bel-btn bel-btn-secondary btn-pressed btn-pressed__check">Aceptar221</button>
 				</div>
-				<div class="bel-col-3">
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 bel-space-top-m">
 					<button id="Button11"
 						class="bel-btn bel-btn-secondary bel-btn-secondary-disabled">Aceptar</button>
 				</div>
@@ -528,13 +531,13 @@
 		</div>
 
 		<!-- BotÃ³n terciario -->
-		<div class="bel-grid-container">
-			<div class="bel-grid-row">
-				<div class="bel-col-1">
+		<div class="grid-container">
+			<div class="grid-row">
+				<div class="col-1">
 					<button
 						class="bel-btn bel-btn-tertiary bel-btn-tertiary-active bel-btn-tertiary-icon"></button>
 				</div>
-				<div class="bel-col-1">
+				<div class="col-1">
 					<button
 						class="bel-btn bel-btn-tertiary bel-btn-tertiary-disabled bel-btn-tertiary-icon"></button>
 				</div>
@@ -544,9 +547,9 @@
 <br>
 
 		<!-- Boton cuaternario -->
-		<div class="bel-grid-container">
-			<div class="bel-grid-row">
-				<div class="bel-col-1">
+		<div class="grid-container">
+			<div class="grid-row">
+				<div class="col-1">
 					<button
 						class="bel-btn bel-btn-quaternary bel-btn-quaternary-active">IBAN</button>
 				</div>
@@ -554,37 +557,38 @@
 		</div>
 
 		<!-- Grupo primario -->
-		<div class="bel-grid-row">
-			<div class="bel-col-12 bel-btn-group">
-				<button class="bel-btn bel-btn-primary bel-btn-primary-active">Aceptar</button>
-				<button class="bel-btn bel-btn-default bel-btn-default-active">Cancelar</button>
+		<div class="grid-row">
+			<div class="col-12 bel-btn-group">
+				<button class="bel-btn bel-btn-primary bel-btn-primary-active bel-space-top-m">Aceptar</button>
+				<button class="bel-btn bel-btn-default bel-btn-default-active bel-space-top-m">Cancelar</button>
 			</div>
 		</div>
+		
+
 
 		<!-- Grupo predeterminado -->
-		<div class="bel-grid-row">
-			<div class="bel-col-6 bel-btn-group">
-				<button class="bel-btn bel-btn-primary bel-btn-default-active">Botón
+		<div class="grid-row">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 bel-btn-group">
+				<button class="bel-btn bel-btn-primary bel-btn-default-active bel-space-top-m">Botón
 					1</button>
-				<button class="bel-btn bel-btn-default bel-btn-default-active">Botón
+				<button class="bel-btn bel-btn-default bel-btn-default-active bel-space-top-m">Botón
 					2</button>
 			</div>
 		</div>
 
 		<!-- Grupo secundario -->
-		<div class="bel-grid-row">
-			<div class="bel-col-10 bel-btn-group">
-				<button class="bel-btn bel-btn-primary bel-btn-primary-active">Aceptar</button>
-				<button class="bel-btn bel-btn-default bel-btn-default-active">Cancelar</button>
-				<button class="bel-btn bel-btn-secondary bel-btn-secondary-active">Secundario</button>
+		<div class="grid-row">
+			<div class="col-12 col-md-10 bel-btn-group">
+				<button class="bel-btn bel-btn-primary bel-btn-primary-active bel-space-top-m">Aceptar</button>
+				<button class="bel-btn bel-btn-default bel-btn-default-active bel-space-top-m">Cancelar</button>
+				<button class="bel-btn bel-btn-secondary bel-btn-secondary-active bel-space-top-m">Secundario</button>
 			</div>
 		</div>
-
-
 <br>
+	
 		<!-- Descargar -->
-		<div class="bel-grid-row">
-			<div class="bel-col-2">
+		<div class="grid-row">
+			<div class="col-2">
 				<div class="bel-auxiliary-component-container">
 					<button id="myId40" class="bel-icon-download bel-auxiliary-component" onclick="displayDownloadOption('myDownload40', 'myId40');">Descargar</button>
 					<ul id="myDownload40" class="bel-download-option-list bel-hide-element">
@@ -603,8 +607,8 @@
 
 
 		<!-- Enviar notificaciones -->
-		<div class="bel-grid-row">
-			<div class="bel-col-3">
+		<div class="grid-row">
+			<div class="col-3">
 				<div class="bel-auxiliary-component-container">
 					<button class="bel-icon-email bel-auxiliary-component">Enviar
 						notificación</button>
@@ -613,8 +617,8 @@
 		</div>
 
 		<!-- Imprimir -->
-		<div class="bel-grid-row">
-			<div class="bel-col-2">
+		<div class="grid-row">
+			<div class="col-2">
 				<div class="bel-auxiliary-component-container">
 					<button class="bel-icon-print bel-auxiliary-component"
 						onclick="window.print();">Imprimir</button>
@@ -624,8 +628,8 @@
 
 <br>
 		<!-- Grupo auxiliares -->
-		<div class="bel-grid-row">
-			<div class="bel-col-12">
+		<div class="grid-row">
+			<div class="col-12">
 				<div
 					class="bel-space-right-xs bel-auxiliary-component-container bel-space-right-l">
 					<button id="myId"
@@ -656,70 +660,72 @@
 			</div>
     </div>
 
-
-	
 <div class="grid-row">
-	<div class="bel-col-12">
+	<div class="col-12">
 		<div id="box-modal" class="bel-box-modal bel-box-hidden"></div>
 	</div>
-		<div id="modal" class="bel-col-8 bel-modal bel-modal-m bel-modal-hidden">
-       		 <div class="bel-col-12 bel-modal-close-btn-cnt bel-padding-reset">
+	<div id="modal" class="col-8 col-md-5 col-lg-6 bel-modal bel-modal-m bel-modal-hidden">
+      
+       <div class="col-12 bel-padding-reset bel-modal-close-btn-cnt">
 					<div class="bel-modal-close-btn bel-modal-close-item" onclick="closeModal('box-modal','modal');"></div>
-			 </div>
-			 <div class="bel-col-12 bel-space-bottom-l bel-padding-reset">
-				<div class="bel-grid-row ">
-				  <div class="bel-col-12 bel-space-bottom-l">
+		</div>
+		
+
+
+<div class="col-12 bel-padding-reset bel-space-bottom-l">
+	<div class="grid-row">
+				  <div class="col-12 bel-space-bottom-l">
 					 <h2 class="bel-icon-email-m bel-typography bel-typography-h2">Enviar notificación de transferencia</h2>
 					</div>
-					<div class="bel-col-12 bel-space-bottom-l">
+					<div class="col-12 bel-space-bottom-l">
 					 <p class="bel-typography bel-typography-p">Digite la dirección de correo electrónico que desea notificar</p>
 					</div>
-					<div class="bel-col-12">
+					<div class="col-12">
 					 <div class="bel-space-bottom-s">
 			       <label class="bel-typography bel-typography-label">Correo electrónico</label>
 			    	</div>
 			    </div>
-			  	<div class="bel-col-6">
-			  	    <div class="bel-position-relative display-inline">
-				      <input id="belInputEmailId"
-							class='bel-input bel-input--icon bel-input--icon-m bel-input-default bel-truncate-text'
+			  	<div class="col-12 col-md-10 col-lg-6">
+			  	<div class="bel-position-relative">
+				      <input id="belInputEmailId1"
+							class='bel-input bel-input--icon bel-input-default bel-truncate-text'
 							type="text" name="" value=""
 							placeholder="Ingrese un correo electrónico"
               onkeyup="belValidateEmail(this.id,'belInpEmailSpan')">
 							<span id="belInpEmailSpan" class="bel-hide-element input-icon-default"></span>
-					</div>		
-				</div>
-  			  <div class="bel-col-6 bel-space-top-s">
+				  </div>
+				  
+				  </div>
+  			  <div class="col-12 col-md-6 bel-space-top-s">
   				  <a class="bel-typography bel-typography-link bel-margin-add-mail-text"
-  					 onclick="belAddNewEmail('belInputEmailId','belMoreEmailsContId', 'belInpEmailSpan',10); $BLUEJQuery('#notificationList').createTextContiner('250');">
+  					 onclick="belAddNewEmail('belInputEmailId1','belMoreEmailsContId', 'belInpEmailSpan',10); $BLUEJQuery('#notificationList').createTextContiner('250');">
   					   Agregar otro correo
   					</a>
   				</div>
-        	</div>
         </div>
-
-		<div class="bel-col-12 bel-space-bottom-l">
+  </div>
+				<div class="col-12 bel-space-bottom-l">
           <div class="bel-border-top"></div>
         </div>
-		<div class="bel-col-12 bel-space-bottom-s">
+				<div class="col-12 bel-space-bottom-s">
           <h4 class="bel-typography bel-typography-h4">Enviar notificación a</h4>
         </div>
-  		<div class="bel-col-12 bel-space-bottom-l padding-reset">
+  			<div class="col-12 bel-space-bottom-l padding-reset">
           <div id="notificationList">
-  			<div id="belMoreEmailsContId"></div>
-          </div>
+  				<div id="belMoreEmailsContId" ></div>
+            </div>
         </div>
-		<div class="bel-col-12 bel-space-bottom-l">
+		    
+		<div class="col-12 bel-space-bottom-l">
 			<button class="bel-btn bel-btn-primary bel-btn-primary-active bel-float-right">Enviar notificación</button>
 		</div>
-	</div>
+			</div> <!-- Fin del modal -->
 </div>
-			 <!-- Fin del modal -->
 
     <br>
-		<div class="bel-grid-container">
-      <div class="bel-grid-row">
-        <div class="bel-col-3">
+		<div class="grid-container">
+      <div class="grid-row">
+        <div class="col-3">
           <div id="toggleIconId3" class="bel-table_caption bel-table-open-icon" onclick="toggleMenu('toggleIconId3', 'cntId3')"></div>
           <div id="cntId3">
             <h3>Ocultar contenido</h3>
@@ -733,125 +739,106 @@
 <br>
 
 		<!--Componentes de Formulario -->
-    <div class="bel-grid-row" id="blue_menu_option_05">
-      <div class="bel-col-12">
+    <div class="grid-row" id="blue_menu_option_05">
+      <div class="col-12">
         <div class="blue-menu-title">
           <h1 class="bel-typography bel-typography-h1">Formulario</h1>
         </div>
       </div>
     </div>
 
-		<div class="bel-grid-row" id="campo_texto">
-			<div class="bel-col-12">
+		<div class="grid-row" id="campo_texto">
+			<div class="col-12">
 				<h4 class="bel-typography bel-typography-h4" style="color: red">Campo de texto</h4>
 			</div>
 		</div>
 
 		<!-- Campos de texto -->
-		<div class="bel-grid-row">
-			<div class="bel-col-12">
+		<div class="grid-row">
+			<div class="col-12">
 				<!-- Campo de texto estado default y tamaÃ±o xs -->
 				<input class='bel-input bel-input-xs bel-input-default' type="text" name="" value="1" placeholder="Test">
 			</div>
 		</div>
-		<div class="bel-grid-row">
-			<div class="bel-col-12">
+		<div class="grid-row">
+			<div class="col-12">
 				<!-- Campo de texto estado non editable y tamaÃ±o s -->
 				<input class='bel-input bel-input-s bel-input-non-editable' type="text" name="" value="BacCredomatic" placeholder="Test">
 			</div>
 		</div>
-		<div class="bel-grid-row">
-			<div class="bel-col-12">
+		<div class="grid-row">
+			<div class="col-12">
 				<!-- Campo de texto estado error y tamaÃ±o m -->
 				<input class='bel-input bel-input-m bel-input-error' type="text" name="" value="" placeholder="Test"> <span
 					class='bel-typography-main bel-typography-label-error'>Error text</span>
 			</div>
 		</div>
-    <div class="bel-grid-row">
-			<div class="bel-col-12">
-				<!-- Campo de texto estado warning y tamaÃ±o m -->
-				<input class='bel-input bel-input-m bel-input-warning' type="text" name="" value="" placeholder="Test"> <span
-					class='bel-typography-main bel-typography-label-warning'>Warning text</span>
-			</div>
-		</div>
-		<div class="bel-grid-row">
-			<div class="bel-col-12">
+		<div class="grid-row">
+			<div class="col-12">
 				<!-- Campo de texto por defecto y tamaÃ±o l -->
 				<input class='bel-input bel-input-l bel-input-default' type="text" name="" value="" placeholder="Test">
 			</div>
 		</div>
-		<div class="bel-grid-row">
-			<div class="bel-col-12">
+		<div class="grid-row">
+			<div class="col-12">
 				<!-- Campo de texto estado default y tamaÃ±o xl -->
 				<input class='bel-input bel-input-xl bel-input-disabled' disabled type="text" name="" value="" placeholder="Test">
 			</div>
-		</div>
-
-		<div class="bel-grid-row">
-			<div class="bel-col-12">
-				<div class="bel-space-bottom-s">
-					<label class="bel-typography bel-typography-label">Validación con error en campo de texto</label>
-				</div>
-				<div>
-					<input class='bel-input--icon bel-input--icon-m bel-input-default' type="text" name="" value="" placeholder="Placeholder"> <span
-						class="bel-error-validation bel-error-validation-item"></span>
-				</div>
+        </div>
+        <!--ValidaciÃ³n con error en campo de texto-->
+        <div class="grid-row">
+            <div class="col-12">
+                <div class="bel-space-bottom-s">
+                    <label class="bel-typography bel-typography-label">Validación con error en campo de texto</label>
+                </div>
+                <div>
+                    <input class='bel-input--icon bel-input--icon-m bel-input-default' type="text" name="" value="" placeholder="Placeholder"> <span
+                        class="bel-error-validation bel-error-validation-item"></span>
+                </div>
 			</div>
 		</div>
-
 
 		<!--ValidaciÃ³n con error en campo de texto-->
-		<div class="bel-grid-row">
-			<div class="bel-col-12">
+		<div class="grid-row">
+			<div class="col-12">
 				<label class="bel-typography bel-typography-label">Validación con error en campo de texto</label>
 			</div>
-			<div class="bel-col-12 bel-space-top-s">
+			<div class="col-12 bel-space-top-s">
 				<div class="bel-position-relative display-inline ">
 					<input class='bel-input bel-input--icon bel-input--icon-m bel-input-default' type="text" name="" value="" placeholder="Placeholder">
 					<span class="input-icon-shape input-icon-circle-critical bel-icon-error-s"></span>
 				</div>
 			</div>
 		</div>
-
-		<div class="bel-grid-row">
-		<div class="bel-col-12">
-			<div class="bel-space-top-s">
-				<label class="bel-typography bel-typography-label">Validación con error en campo de texto</label>
-			</div>
-			<div class="bel-position-relative display-inline ">
-				<input class="bel-input bel-input--icon bel-input--icon-m bel-input-default bel-truncate-text" type="text" name="" value="" placeholder="Placeholder">
-				<span class="input-icon-default bel-validation-icon-success-xxs"></span>
-			</div>
+		<div class="grid-row">
+			<div class="col-12">
+				<div class="bel-space-top-s">
+					<label class="bel-typography bel-typography-label">Validación con error en campo de texto</label>
 				</div>
-		</div>
-
-
-
-		<!--ValidaciÃ³n Ã©xitosa en campo de texto-->
-		<div class="bel-grid-row">
-			<div class="bel-col-5">
-				<div class="bel-space-bottom-s">
-					<label class="bel-typography bel-typography-label">Validación éxitosa en campo de texto</label>
-				</div>
-				<div>
-					<input class='bel-input--icon bel-input--icon-m bel-input-default' type="text" name="" value="" placeholder="Placeholder"> <span
-						class="bel-validation-icon bel-validation-icon-success-s"></span>
-				</div>
-			</div>
-			<div class="bel-col-5">
-				<div class="bel-space-bottom-s">
-					<label class="bel-typography bel-typography-label">Validación éxitosa en campo de texto</label>
-				</div>
-				<div>
-					<input class='bel-input--icon bel-input--icon-m bel-input-default' type="text" name="" value="" placeholder="Placeholder"> <span
-						class="bel-validation-icon bel-validation-icon-success-s"></span>
+				<div class="bel-position-relative display-inline ">
+					<input class="bel-input bel-input--icon bel-input--icon-m bel-input-default bel-truncate-text" type="text" name="" value="" placeholder="Placeholder">
+					<span class="input-icon-default bel-validation-icon-success-xxs"></span>
 				</div>
 			</div>
 		</div>
-
+		
+		
+		<div class="bel-grid-row">
+   <div class="bel-col-12">
+      <div class="bel-space-bottom-s">
+         <label class="bel-typography bel-typography-label">Validación exitosa en campo de texto probando</label>
+      </div>
+   </div>
+   <div class="bel-col-12">
+		<div class="bel-position-relative display-inline ">
+			<input class="bel-input bel-input--icon bel-input--icon-m bel-input-default bel-truncate-text" type="text" name="" value="" placeholder="Placeholder"> 
+			<span class="input-icon-default bel-validation-icon-success-xxs"></span>
+		</div>
+	</div>
+</div>
 		<!--ValidaciÃ³n cargando en campo de texto-->
-		<div class="bel-grid-row">
-			<div class="bel-col-12">
+		<div class="grid-row">
+			<div class="col-12">
 				<div class="bel-space-bottom-s">
 					<label class="bel-typography bel-typography-label">Validación cargando en campo de texto</label>
 				</div>
@@ -860,26 +847,27 @@
 					type="text" name="" value="" placeholder="Placeholder">
 			</div>
 		</div>
-
 		<!--Grupo campo de texto de contraseÃ±a-->
-		<div class="bel-grid-row">
-			<div class="bel-col-12">
-				<div class="bel-space-bottom-s">
+		<div class="grid-row">
+			<div class="col-3">
+				<div class="bel-space-top-s">
 					<label class="bel-typography bel-typography-label">Contraseña</label>
 				</div>
+				
 				<input id="myBelInputPassId" type="password" name="" value="" placeholder="Test">
+
 			</div>
 		</div>
 		</br>
-		<div class="bel-grid-row" id="campo_moneda">
-			<div class="bel-col-12">
+		<div class="grid-row" id="campo_moneda">
+			<div class="col-12">
 				<h4 class="bel-typography bel-typography-h4" style="color: red">Campo de moneda</h4>
 			</div>
 		</div>
 		</br>
 		<!--campo texto moneda-->
-			  <div class="bel-grid-row">
-		    	 <div class="bel-col-12">
+			  <div class="grid-row">
+		    	 <div class="col-12">
 			     	<div class="bel-currency-content bel-input-s bel-input-disabled">
 			           <span class='bel-currency-text bel-padding-right-s ' >USD</span>
                        <input class='bel-input-currency-s bel-input-currency bel-input-disabled' dir="rtl" type="number" disabled value="52563"/>
@@ -888,8 +876,8 @@
                </div>
 
                </br>
-     			<div class="bel-grid-row">
-              	 <div class="bel-col-12">
+     			<div class="grid-row">
+              	 <div class="col-12">
 	                <div class="bel-currency-content bel-input-l ">
 					           <span class='bel-currency-text bel-currency-text__medium-gray bel-padding-right-s' >LMP</span>
 	                      <input class='bel-input-currency bel-input-currency-s bel-input-default' dir="ltr" type="number" />
@@ -897,8 +885,8 @@
                 </div>
               </div>
                  </br>
-          	  <div class="bel-grid-row">
-                <div class="bel-col-12">
+          	  <div class="grid-row">
+                <div class="col-12">
                 	<div class="bel-currency-content bel-input-m">
 			           <span class='bel-currency-text bel-currency-text__dark-gray bel-padding-right-m' >CRC</span>
                       <input class='bel-input-currency bel-input-currency-m ' dir="rtl" type="number" value="169567"/>
@@ -906,8 +894,8 @@
                	</div>
                </div>
                   </br>
-           	 <div class="bel-grid-row">
-                <div class="bel-col-12">
+           	 <div class="grid-row">
+                <div class="col-12">
 	                <div class="bel-currency-content bel-input-m bel-input-error">
 				           <span class='bel-currency-text bel-currency-text__medium-gray bel-padding-right-xl' >USD</span>
 	                      <input class='bel-input-currency bel-input-currency-xl bel-input-default' dir="rtl" type="number"/>
@@ -916,8 +904,8 @@
 		 		</div>
 	 		</div>
 	 		</br>
-		      <div class="bel-grid-row">
-              	<div class="bel-col-12">
+		      <div class="grid-row">
+              	<div class="col-12">
                 <div class="bel-currency-content bel-input-xl ">
 			           <span class='bel-currency-text bel-currency-text__medium-gray bel-padding-right-xl' >CLB</span>
                       <input class=' bel-input-currency bel-input-currency-xl bel-input-default' dir="ltr" type="number"/>
@@ -926,8 +914,8 @@
             </div>
 			</br>
 		<!--Grupo campos de texto -->
-		<div class="bel-grid-row ">
-			<div class="bel-col-12">
+		<div class="grid-row ">
+			<div class="col-12">
 				<!--Grupo campo de texto tamaÃ±o xs-->
 				<div class="bel-space-bottom-s">
 					<label class="bel-typography bel-typography-label">Label Banca en línea, campo de texto tamaño xs</label>
@@ -973,72 +961,72 @@
 			<br>
 
 		<!--Ã�rea de texto-->
-    <div class="bel-grid-row" id="area_texto">
-			<div class="bel-col-12">
+    <div class="grid-row" id="area_texto">
+			<div class="col-12">
 				<h4 class="bel-typography bel-typography-h4" style="color: red">Area de texto</h4>
 			</div>
 		</div>
-		<div class="bel-grid-row">
-			<div class="bel-col-12">
+		<div class="grid-row">
+			<div class="col-12">
 				<!--Ã�rea de texto. TamaÃ±o estandar-->
 				<textarea class="bel-textarea bel-textarea-m" placeholder='Test'></textarea>
 			</div>
 		</div>
-		<div class="bel-grid-row">
-			<div class="bel-col-12">
+		<div class="grid-row">
+			<div class="col-12">
 				<!--Ã�rea de texto. Estado filled-->
 				<textarea class="bel-textarea bel-textarea-m bel-textarea-filled" placeholder='Placeholder'>BacCredomatic</textarea>
 			</div>
 		</div>
-		<div class="bel-grid-row">
-			<div class="bel-col-12">
+		<div class="grid-row">
+			<div class="col-12">
 				<!--Ã�rea de texto. Estado error-->
 				<textarea class="bel-textarea bel-textarea-m bel-textarea-error" placeholder='Placeholder'></textarea>
 			</div>
 		</div>
 
 		<!--Grupo campo de selecciÃ³n s-->
-    <div class="bel-grid-row" id="combo">
-			<div class="bel-col-12">
+    <div class="grid-row" id="combo">
+			<div class="col-12">
 				<h4 class="bel-typography bel-typography-h4" style="color: red">Combo de selección</h4>
 			</div>
 		</div>
 
 		<!--Campo de selecciÃ³n con tamaÃ±o XS-->
-		<div class="bel-grid-row ">
-			<div class="bel-col-5">
+		<div class="grid-row ">
+			<div class="col-5">
 				<div class="bel-space-bottom-s">
 					<label class="bel-typography bel-typography-label">Label Banca en línea, campo de texto tamaño xs</label>
 				</div>
-				<div>
-					<select id="myId1">
+				
+					<select name="myId1">
 						<option value="-1" disabled selected>#</option>
 						<option>Esto es un combo de selección</option>
 						<option>2</option>
 					</select>
-				</div>
+				
 			</div>
 		</div>
 
 		<!--Campo de selecciÃ³n con tamaÃ±o S-->
-		<div class="bel-grid-row ">
-			<div class="bel-col-5">
+		<div class="grid-row ">
+			<div class="col-5">
 				<div class="bel-space-bottom-s">
 					<label class="bel-typography bel-typography-label">Label Banca en línea, campo de texto tamaño s</label>
 				</div>
-				<div>
+				
 					<select id="myId2" name="myName2" scrollable>
-						<option value="-1" disabled selected>#</option>
+					    <option value="-1" disabled selected>#</option>
 						<option>Esto es un combo de selección con más texto</option>
 						<option>Esto es todo</option>
 					</select>
-				</div>
+			
 			</div>
 		</div>
 
 		<!--Campo de selecciÃ³n con tamaÃ±o M-->
-		<div class="bel-grid-row ">
-			<div class="bel-col-6">
+		<div class="grid-row ">
+			<div class="col-6">
 				<div class="bel-space-bottom-s">
 					<label class="bel-typography bel-typography-label">Label Banca en línea, campo de texto tamaño m</label>
 				</div>
@@ -1053,41 +1041,41 @@
 		</div>
 
 		<!--Campo de selecciÃ³n con tamaÃ±o L-->
-		<div class="bel-grid-row ">
-			<div class="bel-col-8">
+		<div class="grid-row ">
+			<div class="col-8">
 				<div class="bel-space-bottom-s">
 					<label class="bel-typography bel-typography-label">Label Banca en línea, campo de texto tamaño l <b>con buscador</b></label>
 				</div>
 				<div>
 					<select id="myId4" name="myName4">
 						<option value="-1" disabled selected>#</option>
-            <option>Cocina</option>
-            <option>Sala</option>
-             <option>Baño</option>
-             <option>Recamara</option>
-             <option>Garaje</option>
-             <option>Patio</option>
-             <option>Corredor</option>
-             <option>Jardín</option>
-             <option>Cabaña</option>
-             <option>Sótano</option>
+			            <option>Cocina</option>
+			            <option>Sala</option>
+			             <option selected>Baño</option>
+			             <option>Recamara</option>
+			             <option>Garaje</option>
+			             <option>Patio</option>
+			             <option>Corredor</option>
+			             <option>Jardín</option>
+			             <option>Cabaña</option>
+			             <option>Sótano</option>
 					</select>
 				</div>
 			</div>
 		</div>
 
 		<!--Campo de selecciÃ³n con tamaÃ±o L ("optgroup")-->
-		<div class="bel-grid-row ">
-			<div class="bel-col-8">
+		<div class="grid-row ">
+			<div class="col-8">
 				<div class="bel-space-bottom-s">
 					<label class="bel-typography bel-typography-label">Label Banca en línea, campo de texto tamaño l <b>con buscador</b> ("optgroup") </label>
 				</div>
 				<div>
 					<select id="myId5" name="myName5">
-            <option value="-1" disabled selected>#</option>
+            <option value="-1" disabled>#</option>
  						<optgroup label="Partes de la casa">
               <option>Cocina</option>
-   						<option>Sala</option>
+   						<option selected="selected">Sala</option>
                <option>Baño</option>
                <option>Recamara</option>
                <option>Garaje</option>
@@ -1117,16 +1105,16 @@
 		</div>
 
 		<!--Campo de selecciÃ³n con tamaÃ±o L ("option=disable")-->
-		<div class="bel-grid-row ">
-			<div class="bel-col-8">
+		<div class="grid-row ">
+			<div class="col-8">
 				<div class="bel-space-bottom-s">
 					<label class="bel-typography bel-typography-label">Label Banca en línea, campo de texto tamaño l ("optgroup") </label>
 				</div>
 				<div>
 					<select id="myId6" name="myName6">
-						<option value="-1" disabled selected>#</option>
+						<option value="-1" disabled>#</option>
 						<option disabled="disabled">Categoria 1</option>
-						<option>1</option>
+						<option selected>1</option>
 						<option>2</option>
 						<option disabled="disabled">Categoria 2</option>
 						<option>1</option>
@@ -1137,8 +1125,8 @@
 		</div>
 
 		<!--Campo de selecciÃ³n con tamaÃ±o XL-->
-		<div class="bel-grid-row ">
-			<div class="bel-col-10">
+		<div class="grid-row ">
+			<div class="col-10">
 				<div class="bel-space-bottom-s">
 					<label class="bel-typography bel-typography-label">Label Banca en línea, campo de texto tamaño XL</label>
 				</div>
@@ -1154,7 +1142,7 @@
 
 		<!--Campo de selecciÃ³n con tamaÃ±o XL horizontal-->
     <br>
-    <div class="bel-col-12 bel-position-right">
+    <div class="col-12 bel-position-right">
 			<div class="bel-option-horizontal bel-space-right-l">
 				<label class="bel-typography bel-typography-label">Seleccione producto</label>
 			</div>
@@ -1169,31 +1157,31 @@
 
 		<!--Campo de selecciÃ³n con tamaÃ±o XL desabilitado-->
 <br><br>
-    <div class="bel-col-12">
+    <div class="col-12">
 			<div class="bel-space-right-l">
 				<label class="bel-typography bel-typography-label">Label Banca en línea, combo desabilitado</label>
 			</div>
 			<div>
 				<select id="myId9" name="myName9" disabled>
-					<option value="-1" disabled selected>#</option>
-					<option>1</option>
+					<option value="-1" disabled>#</option>
+					<option selected>1</option>
 					<option>2</option>
 				</select>
 			</div>
 		</div>
 
-    <div class="bel-grid-row" id="radio">
-			<div class="bel-col-12">
+    <div class="grid-row" id="radio">
+			<div class="col-12">
 				<h4 class="bel-typography bel-typography-h4" style="color: red">Botón de selección</h4>
 			</div>
 		</div>
 		<!-- Radio vertical -->
-		<div class="bel-grid-row">
-			<div class="bel-col-12">
+		<div class="grid-row">
+			<div class="col-12">
 				<div class="bel-space-bottom-m">
 					<label class="bel-typography bel-typography-label">Label Banca en linea</label>
 				</div>
-				<div class="bel-col-3">
+				<div class="col-6 col-md-3">
 					<div class="bel-selection-input">
 						<input class="bel-radio-button" type="radio" id="an-id14"
 							name="option" value="1"> <label
@@ -1209,12 +1197,12 @@
 			</div>
 		</div>
 		<!-- Radios a los lados -->
-		<div class="bel-grid-row">
-			<div class="bel-col-12">
-				<div class="bel-space-bottom-m">
+		<div class="grid-row">
+			<div class="col-12 bel-space-top-s">
+				
 					<label class="bel-typography bel-typography-label">Label Banca en linea</label>
 				</div>
-				<div class="bel-col-4">
+				<div class="col-8 col-md-4">
 					<div class="bel-display-inline bel-space-right-s">
 						<input class="bel-radio-button" type="radio" id="an-id12" name="option" value="1">
 						<label class="bel-radio-button-icon" for="an-id12"></label>
@@ -1225,21 +1213,20 @@
 						class="bel-radio-button-icon" for="an-id13"></label> <label
 						class="bel-radio-button-text" for="an-id13">Radio Button 2</label>
 				</div>
-			</div>
 		</div>
 
 		<!-- CheckBox -->
-    <div class="bel-grid-row" id="check">
-			<div class="bel-col-12">
+    <div class="grid-row" id="check">
+			<div class="col-12">
 				<h4 class="bel-typography bel-typography-h4" style="color: red">Casilla de verificación</h4>
 			</div>
 		</div>
 
-		<div class="bel-grid-row">
-			<div class="bel-space-left-s bel-space-bottom-m">
+		<div class="grid-row bel-space-top-s">
+			<div class="col-12">
 				<label class="bel-typography bel-typography-label">Label Banca en linea</label>
 			</div>
-			<div class="bel-col-2">
+			<div class="col-4 col-md-2">
 				<div class="bel-selection-input">
 					<input class="bel-checkbox-button" type="checkbox" id="myCheckId1" name="option" value="Primero">
 					 <label class="bel-checkbox-button-icon" for="myCheckId1">
@@ -1248,7 +1235,7 @@
 				</div>
 			</div>
 
-			<div class="bel-col-2">
+			<div class="col-4 col-md-2">
 				<div class="bel-selection-input">
 					<input class="bel-checkbox-button" type="checkbox" id="myCheckId2"
 						name="option" value="Primero"> <label
@@ -1261,13 +1248,13 @@
 
 <br>
 		<!-- Switch -->
-    <div class="bel-grid-row" id="switch">
-			<div class="bel-col-12">
+    <div class="grid-row" id="switch">
+			<div class="col-12">
 				<h4 class="bel-typography bel-typography-h4" style="color: red">Interruptor</h4>
 			</div>
 		</div>
-		<div class="bel-grid-row">
-			<div class="bel-col-4">
+		<div class="grid-row">
+			<div class="col-4">
 				<div class="bel-selection-input bel-space-bottom-m">
 					<label for="mySwitchId1" class="bel-switch-text"> Switch 1</label>
 					<label class="bel-switch"> <input class="bel-switch-input"
@@ -1278,14 +1265,14 @@
 		</div>
 
 		<!-- DatePicker -->
-    <div class="bel-grid-row" id="datepicker">
-			<div class="bel-col-12">
+    <div class="grid-row" id="datepicker">
+			<div class="col-12">
 				<h4 class="bel-typography bel-typography-h4" style="color: red">Selector de fecha</h4>
 			</div>
 		</div>
 		<!-- DatePicker espaÃ±ol-->
-		<div class="bel-grid-row ">
-			<div class="bel-col-5">
+		<div class="grid-row ">
+			<div class="col-5">
 				<div>
 					<label class="bel-typography bel-typography-label">Datepicker S - Español</label>
 				</div>
@@ -1296,8 +1283,8 @@
 		</div>
 
 		<!-- DatePicker inglÃ©s -->
-		<div class="bel-grid-row ">
-			<div class="bel-col-5">
+		<div class="grid-row ">
+			<div class="col-5">
 				<div>
 					<label class="bel-typography bel-typography-label">Datepicker S - Inglés</label>
 				</div>
@@ -1310,8 +1297,8 @@
 		</div>
 
 
-	<div class="bel-grid-row ">
-	<div class="bel-col-12">
+	<div class="grid-row ">
+	<div class="col-12">
 		 <!--Grupo Datepicker tamaÃ±o xs-->
     <div>
       <div>
@@ -1388,27 +1375,27 @@
 
 
 <br>
-<div class="bel-grid-row" id="divisor">
-  <div class="bel-col-12">
+<div class="grid-row" id="divisor">
+  <div class="col-12">
     <h4 class="bel-typography bel-typography-h4" style="color: red">Divisor</h4>
   </div>
 </div>
 		<!-- Divisor -->
-		<div class="bel-grid-container">
-			<div class="bel-grid-row">
-				<div class="bel-col-6">
+		<div class="grid-container">
+			<div class="grid-row">
+				<div class="col-6">
 					<div class="bel-border-top"></div>
 				</div>
 <br>
-				<div class="bel-col-8">
+				<div class="col-8">
 					<div class="bel-border-top"></div>
 				</div>
 <br>
-				<div class="bel-col-10">
+				<div class="col-10">
 					<div class="bel-border-top"></div>
 				</div>
 <br>
-				<div class="bel-col-12">
+				<div class="col-12">
 					<div class="bel-border-top"></div>
 				</div>
 			</div>
@@ -1416,13 +1403,13 @@
 <br>
 
 		<!--Tooltip -->
-    <div class="bel-grid-row" id="tooltip">
-			<div class="bel-col-12">
+    <div class="grid-row" id="tooltip">
+			<div class="col-12">
 				<h4 class="bel-typography bel-typography-h4" style="color: red">Etiqueta emergente</h4>
 			</div>
 		</div>
-		<div class="bel-grid-row">
-			<div class="bel-col-12">
+		<div class="grid-row">
+			<div class="col-12">
 				<!--icono ?_caja tooltip derecha -->
 				<div class="bel-middle-align-cont">
 					<div class="bel-tooltip-circle bel-icon-question bel-tooltip-generic"></div>
@@ -1434,8 +1421,8 @@
 		</div>
 <br>
 		<!--boton_caja tooltip derecha-->
-		<div class="bel-grid-row">
-			<div class="bel-col-12">
+		<div class="grid-row">
+			<div class="col-12">
 				<div class="bel-middle-align-cont">
 					<button class="bel-btn bel-btn-primary bel-btn-primary-active bel-tooltip-generic">Aceptar</button>
 					<span class="bel-tooltip-generic-text">Is simply dummy text
@@ -1448,8 +1435,8 @@
 <br>
 
 		<!--textarea_tooltip abajo-->
-		<div class="bel-grid-row">
-			<div class="bel-col-12">
+		<div class="grid-row">
+			<div class="col-12">
 				<div class="bel-middle-align-cont">
 					<textarea class="bel-textarea bel-textarea-m bel-textarea-filled bel-tooltip-generic" placeholder='Placeholder'>BacCredomatic</textarea>
 					<span class="bel-tooltip-generic-text bel-tooltip-generic-text__down bel-tooltip-generic-text__l">Is
@@ -1460,24 +1447,24 @@
 		</div>
 <br>
 		<!-- Tablas -->
-    <div class="bel-grid-row" id="blue_menu_option_06">
-			<div class="bel-col-12">
+    <div class="grid-row" id="blue_menu_option_06">
+			<div class="col-12">
         <div class="blue-menu-title">
           <h1 class="bel-typography bel-typography-h1">Tablas</h1>
         </div>
       </div>
     </div>
 
-		<div class="bel-grid-row" id="table_sub">
-			<div class="bel-col-12">
+		<div class="grid-row" id="table_sub">
+			<div class="col-12">
 				<h4 class="bel-typography bel-typography-h4" style="color: red">Tabla con sub filas</h4>
 			</div>
 		</div>
 		<!-- Componente -->
 
-    <div class="bel-grid-container">
-      <div class="bel-grid-row bel-space-bottom-m">
-        <div class="bel-col-12">
+    <div class="grid-container">
+      <div class="grid-row bel-space-bottom-m">
+        <div class="col-12">
           <div class="bel-card">
           <table id="idDeTablaSubrows">
             <caption>
@@ -1664,16 +1651,16 @@
 
 		<br>
 		<!-- Tablas -->
-		<div class="bel-grid-row" id="table">
-			<div class="bel-col-12">
+		<div class="grid-row" id="table">
+			<div class="col-12">
 				<h4 class="bel-typography bel-typography-h4" style="color: red">Tabla</h4>
 			</div>
 		</div>
 		<!-- Componente -->
 
-    <div class="bel-grid-container">
-      <div class="bel-grid-row bel-space-bottom-m">
-        <div class="bel-col-12">
+    <div class="grid-container">
+      <div class="grid-row bel-space-bottom-m">
+        <div class="col-12">
           <div class="bel-card">
           <table id="idDeTabla">
             <caption>
@@ -1823,9 +1810,9 @@
     </script>
 
 <!-- Titulos - Caption -->
-		<div class="bel-grid-container">
-			<div class="bel-grid-row bel-space-bottom-m">
-				<div class="bel-col-12">
+		<div class="grid-container">
+			<div class="grid-row bel-space-bottom-m">
+				<div class="col-12">
 					<div class="bel-card">
 						<table class="bel-table">
 							<caption id="caption2"
@@ -1842,8 +1829,8 @@
 				</div>
 			</div>
 
-			<div class="bel-grid-row bel-space-bottom-m">
-				<div class="bel-col-12">
+			<div class="grid-row bel-space-bottom-m">
+				<div class="col-12">
 					<div class="bel-card">
 						<table class="bel-table">
 							<caption>
@@ -1861,8 +1848,8 @@
 				</div>
 			</div>
 
-			<div class="bel-grid-row bel-space-bottom-m">
-				<div class="bel-col-12">
+			<div class="grid-row bel-space-bottom-m">
+				<div class="col-12">
 					<div class="bel-card">
 						<caption id="caption3" class="bel-table_caption">
 							<div class="bel-table-icon bel-icon-acccount-l"></div>
@@ -1877,8 +1864,8 @@
 				</div>
 			</div>
 
-			<div class="bel-grid-row bel-space-bottom-m">
-				<div class="bel-col-12">
+			<div class="grid-row bel-space-bottom-m">
+				<div class="col-12">
 					<div class="bel-card">
 						<table class="bel-table">
 							<caption id="caption5" class="bel-table_caption">
@@ -1909,8 +1896,8 @@
 <br>
 
 		<!-- Encabezados -->
-		<div class="bel-grid-row bel-space-bottom-m">
-			<div class="bel-col-12">
+		<div class="grid-row bel-space-bottom-m">
+			<div class="col-12">
 				<div class="bel-card">
 					<table class="bel-table">
 						<thead class="bel-table_thead">
@@ -1928,8 +1915,8 @@
 			</div>
 		</div>
 <br>
-		<div class="bel-grid-row bel-space-bottom-m">
-			<div class="bel-col-12">
+		<div class="grid-row bel-space-bottom-m">
+			<div class="col-12">
 				<div class="bel-card">
 					<table class="bel-table">
 						<thead class="bel-table_thead">
@@ -1949,8 +1936,8 @@
 
 		<!-- Sub Header -->
 
-		<div class="bel-grid-row bel-space-bottom-m">
-			<div class="bel-col-12">
+		<div class="grid-row bel-space-bottom-m">
+			<div class="col-12">
 				<div class="bel-card">
 					<table class="bel-table">
 						<thead id="thead4" class="bel-table_thead">
@@ -2010,9 +1997,9 @@
 
 		<!-- Columnas -->
 
-		<div class="bel-grid-container">
-			<div class="bel-grid-row bel-space-bottom-m">
-				<div class="bel-col-12">
+		<div class="grid-container">
+			<div class="grid-row bel-space-bottom-m">
+				<div class="col-12">
 					<div class="bel-card">
 						<p>Columna al 100%</p>
 						<table class="bel-table">
@@ -2030,9 +2017,9 @@
 			</div>
 		</div>
 
-		<div class="bel-grid-container">
-			<div class="bel-grid-row bel-space-bottom-m">
-				<div class="bel-col-12">
+		<div class="grid-container">
+			<div class="grid-row bel-space-bottom-m">
+				<div class="col-12">
 					<div class="bel-card">
 						<p>Columna al 50% (Confirmación, Resultado)</p>
 						<table class="bel-table">
@@ -2053,9 +2040,9 @@
 			</div>
 		</div>
 
-		<div class="bel-grid-container">
-			<div class="bel-grid-row bel-space-bottom-m">
-				<div class="bel-col-12">
+		<div class="grid-container">
+			<div class="grid-row bel-space-bottom-m">
+				<div class="col-12">
 					<div class="bel-card">
 						<p>5 Columnas (Consulta Consolidada)</p>
 						<table class="bel-table">
@@ -2109,9 +2096,9 @@
 			</div>
 		</div>
 
-		<div class="bel-grid-container">
-			<div class="bel-grid-row bel-space-bottom-m">
-				<div class="bel-col-12">
+		<div class="grid-container">
+			<div class="grid-row bel-space-bottom-m">
+				<div class="col-12">
 					<div class="bel-card">
 						<p>6 Columnas (Transaccional)</p>
 						<table class="bel-table">
@@ -2163,9 +2150,9 @@
 
 		<!-- Footer -->
 		<!-- Footer único -->
-		<div class="bel-grid-container">
-			<div class="bel-grid-row bel-space-bottom-m">
-				<div class="bel-col-12">
+		<div class="grid-container">
+			<div class="grid-row bel-space-bottom-m">
+				<div class="col-12">
 					<div class="bel-card">
 						<table class="bel-table">
 							<caption id="caption4" class="bel-table_caption">
@@ -2266,9 +2253,9 @@
 
 
 		<!-- Footer compartido -->
-		<div class="bel-grid-container">
-			<div class="bel-grid-row bel-space-bottom-m">
-				<div class="bel-col-12">
+		<div class="grid-container">
+			<div class="grid-row bel-space-bottom-m">
+				<div class="col-12">
 					<div class="bel-card">
 						<table class="bel-table">
 							<caption onclick="toggleTable('4');" id="caption4"
@@ -2330,8 +2317,8 @@
 				</div>
 			</div>
 
-			<div class="bel-grid-row bel-space-bottom-m">
-				<div class="bel-col-12">
+			<div class="grid-row bel-space-bottom-m">
+				<div class="col-12">
 					<div class="bel-card">
 						<table class="bel-table">
 							<caption id="caption4"
@@ -2384,8 +2371,8 @@
 				</div>
 			</div>
 
-			<div class="bel-grid-row bel-space-bottom-m">
-				<div class="bel-col-12">
+			<div class="grid-row bel-space-bottom-m">
+				<div class="col-12">
 					<div class="bel-tfoot_card">
 						<table class="bel-table">
 							<tfoot class="bel-table_tfoot">
@@ -2402,26 +2389,27 @@
 
 
 		<!-- PestaÃ±as -->
-    <div class="bel-grid-row" id="blue_menu_option_07">
-			<div class="bel-col-12">
+    <div class="grid-row" id="blue_menu_option_07">
+			<div class="col-12">
         <div class="blue-menu-title">
           <h1 class="bel-typography bel-typography-h1">Pestañas</h1>
         </div>
 			</div>
 		</div>
 
-		<div class="bel-grid-row">
-			<div class="bel-col-12">
+		<div class="grid-row">
+			<div class="col-12">
 				<div id="tabs">
 					<ul>
-						<li><a href="#tabs-1" onclick="return false;">Nunc tincidunt</a></li>
-						<li><a href="#tabs-2">Proin dolor</a></li>
+						<li class="col-sm-2 col-md-3 col-lg-4"><a href="#tabs-1" onclick="return false;">Nunc tincidunt</a></li>
+						<li class="col-sm-2 col-md-3 col-lg-4"><a href="#tabs-2">Proin dolor</a></li>
+						<li class="col-sm-2 col-md-3 col-lg-4"><a href="#tabs-2">Proin dolor</a></li>
 					</ul>
 
 					<div id="tabs-1">
             <div class="bel-card">
-					   <div class="bel-grid-row bel-position-right">
-						<div class="bel-col-12">
+					   <div class="grid-row bel-position-right">
+						<div class="col-12">
 						  <div class="bel-space-right-xs bel-auxiliary-component-container">
 							<button id="my88" class="bel-icon-download bel-auxiliary-component" submit="return false;" onclick="displayDownloadOption('myDownload052', 'my88');">Descargar</button>
 							<ul id="myDownload052" class="bel-download-option-list bel-hide-element">
@@ -2449,16 +2437,16 @@
 		</div>
 
 		<!-- Listas -->
-    <div class="bel-grid-row" id="blue_menu_option_08">
-			<div class="bel-col-12">
+    <div class="grid-row" id="blue_menu_option_08">
+			<div class="col-12">
         <div class="blue-menu-title">
           <h1 class="bel-typography bel-typography-h1">Listas</h1>
         </div>
 			</div>
 		</div>
 		<!-- Listas ordenada -->
-		<div class="bel-grid-row">
-			<div class="bel-col-12">
+		<div class="grid-row">
+			<div class="col-12">
 				<ul class="bel-list">
 					<li class="bel-list__unordered-li">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
 					</li>
@@ -2471,8 +2459,8 @@
 		</div>
 		<br>
 		<!-- Listas no ordenada -->
-		<div class="bel-grid-row">
-			<div class="bel-col-12">
+		<div class="grid-row">
+			<div class="col-12">
 				<ol class="bel-list">
 					<li class="bel-list__ordered-li">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</li>
 					<li class="bel-list__ordered-li">Texto</li>
@@ -2482,42 +2470,42 @@
 		</div>
 		<br>
 
-    <div class="bel-grid-row" id="blue_menu_option_20">
-			<div class="bel-col-12">
+    <div class="grid-row" id="blue_menu_option_20">
+			<div class="col-12">
         <div class="blue-menu-title">
           <h1 class="bel-typography bel-typography-h1">Wizard</h1>
         </div>
 			</div>
 		</div>
 
-		<div class="bel-grid-row">
-			<div class="bel-col-12" id="idProcess">
+		<div class="grid-row">
+			<div class="col-12" id="idProcess">
 
 			</div>
 		</div>
 
 
-		<div class="bel-grid-row">
-      <div class="bel-col-12">
+		<div class="grid-row">
+      <div class="col-12">
 			     <div id="idProcess2"></div>
 		  </div>
 		</div>
 
-		<div class="bel-grid-row">
-      <div class="bel-col-12">
+		<div class="grid-row">
+      <div class="col-12">
 			     <div id="idProcess3"></div>
       </div>
 		</div>
 
-		<div class="bel-grid-row">
-      <div class="bel-col-12">
+		<div class="grid-row">
+      <div class="col-12">
 			     <div id="idProcess4"></div>
      </div>
 		</div>
 
 		<!-- Mensajes de alerta -->
-    <div class="bel-grid-row" id="blue_menu_option_09">
-			<div class="bel-col-12">
+    <div class="grid-row" id="blue_menu_option_09">
+			<div class="col-12">
         <div class="blue-menu-title">
           <h1 class="bel-typography bel-typography-h1">Mensajes de alerta</h1>
         </div>
@@ -2534,16 +2522,16 @@
 <br>
 
 	<!-- Buscador -->
-  <div class="bel-grid-row" id="blue_menu_option_10">
-			<div class="bel-col-12">
+  <div class="grid-row" id="blue_menu_option_10">
+			<div class="col-12">
       <div class="blue-menu-title">
         <h1 class="bel-typography bel-typography-h1">Buscador</h1>
       </div>
 			</div>
 		</div>
 
-		<div class="bel-grid-row">
-	<div class="bel-col-4">
+		<div class="grid-row">
+	<div class="col-12 col-md-6">
 		<div class="bel-position-relative">
 		  <span class="bel-icon-search-xs bel-search-icon-position"></span>
 		  <input onkeyup="belShowResultsContent('myInput', 'myContent2')" id="myInput" class="bel-input-search bel-search__input" type="text" name="" value="" placeholder="¿Qué desea solicitar?">
@@ -2565,9 +2553,9 @@
 
 <br>
 
-<div class="bel-grid-container">
-	<div class="bel-grid-row">
-		<div class="bel-col-4">
+<div class="grid-container">
+	<div class="grid-row">
+		<div class="col-4">
 			<div class="bel-position-relative">
 				<span class="bel-icon-search-xs bel-search-icon-position"></span>
 				<div class=" bel-typography-h5 bel-search_element-content"><label for="search" class="bel-search_element-label" >Buscar</label></div>
@@ -2613,15 +2601,15 @@
 
 <br>
 	<!-- Animaciones -->
-  <div class="bel-grid-row" id="blue_menu_option_11">
-			<div class="bel-col-12">
+  <div class="grid-row" id="blue_menu_option_11">
+			<div class="col-12">
       <div class="blue-menu-title">
         <h1 class="bel-typography bel-typography-h1">Animaciones</h1>
       </div>
 			</div>
 		</div>
-		<div class="bel-grid-row">
-			<div class="bel-col-12">
+		<div class="grid-row">
+			<div class="col-12">
 				<div class="bel-timer-cont">
 					<label class="bel-timer-cont__numbers" id="belSeconds"></label>
 					<svg class="bel-timer-cont__timer" xmlns="http://www.w3.org/2000/svg">
@@ -2639,8 +2627,8 @@
 <br>
 
 	<!-- Cintillos -->
-  <div class="bel-grid-row" id="blue_menu_option_12">
-			<div class="bel-col-12">
+  <div class="grid-row" id="blue_menu_option_12">
+			<div class="col-12">
       <div class="blue-menu-title">
         <h1 class="bel-typography bel-typography-h1">Cintillos</h1>
       </div>
@@ -2648,17 +2636,16 @@
 		</div>
 
 
-	<div class="bel-grid-container">
-		<div class="bel-grid-row">
-			<div class="bel-col-12">
+	<div class="grid-container">
+		<div class="grid-row">
+			<div class="col-12">
 				<div id="directMessage28" class="bel-directMessage">
 					<div class="bel-directMessage_Icon ">
 						<div class="bel-alertMessage-icon-container">
 							<div class="bel-alertMessage-icon bel-icon-logo-xl"></div>
 						</div>
 					</div>
-					<div
-						class="bel-display-inline bel-directMessage_content">
+					<div class="bel-display-inline bel-directMessage_content">
 						<div class="bel-space-bottom-xs">
 							<h4 class="bel-typography bel-typography-h4">Aperture su plan de pago de planillas y proveedores en línea.</h4>
 						</div>
@@ -2666,8 +2653,7 @@
 							<p class="bel-typography bel-typography-p">El servicio se encuentra activo. Ingrese a crear sus planes de pago.</p>
 						</div>
 					</div>
-					<div
-						class="bel-directMessage_group-button bel-display-inline">
+					<div class="bel-directMessage_group-button bel-display-inline">
 						<div class="bel-display-inline">
 							<div class="bel-display-inline bel-directMessage_button">
 								<button class="bel-btn bel-btn-primary bel-btn-primary-active"
@@ -2687,9 +2673,9 @@
 
 <br>
 
-      <div class="bel-grid-container">
-        <div class="bel-grid-row bel-space-bottom-l">
-	      <div class="bel-col-12">
+      <div class="grid-container">
+        <div class="grid-row bel-space-bottom-l">
+	      <div class="col-12">
 		    <div id="directMessage16" class="bel-directMessage">
 			<div class="bel-directMessage_Icon bel-icon-security-xl"></div>
 			<div class="bel-display-inline bel-directMessage_content_full">
@@ -2724,8 +2710,8 @@
 					le parece sospechosa, no dude en contactarnos directamente a
 					servicio al cliente al teléfono 2222 - 2222</p>
 			</div>
-			<div class="bel-grid-row bel-space-bottom-s">
-				<div class="bel-col-12 bel-btn-group">
+			<div class="grid-row bel-space-bottom-s">
+				<div class="col-12 bel-btn-group">
 					<button class="bel-btn bel-btn-primary bel-btn-primary-active"
 						onclick="registerGAEvent('Venta Dirigida', 'Abrir Venta', 'Mensaje de advertencia sobre fraude');javascript:openWarningModal('Fraud', '16')">Conocer
 						más</button>
@@ -2741,8 +2727,8 @@
 
      <br>
 		<!-- En progreso -->
-    <div class="bel-grid-row" id="blue_menu_option_21">
-			<div class="bel-col-12">
+    <div class="grid-row" id="blue_menu_option_21">
+			<div class="col-12">
         <div class="blue-menu-title">
           <h1 class="bel-typography bel-typography-h1">En progreso</h1>
         </div>
@@ -2751,9 +2737,9 @@
 
 
 		<!-- Breadcrumbs -->
-		<div class="bel-grid-container">
-			<div class="bel-grid-row">
-				<div class="bel-col-6 bel-col-offset-2">
+		<div class="grid-container">
+			<div class="grid-row">
+				<div class="col-6 offset-2">
 					<ul class="bel-breadcrumb">
 						<li><a href="#">Página anterior</a></li>
 						<li><a href="#">Página anterior</a></li>
@@ -2769,14 +2755,14 @@
 
 		<!-- Editar -->
 
-		    <div class="bel-grid-container">
-      <div class="bel-grid-row">
-        <div class="bel-col-2">
+		    <div class="grid-container">
+      <div class="grid-row">
+        <div class="col-2">
           <div class="bel-auxiliary-component-container">
             <button class="bel-icon-edit-before-xxs bel-auxiliary-component" onclick="window.print();"><label class="bel-space-left-s">Editar</label></button>
           </div>
         </div>
-        <div class="bel-col-2">
+        <div class="col-2">
           <div class="bel-auxiliary-component-container">
             <button class="bel-icon-edit-before-xxs bel-auxiliary-component-disabled" onclick="window.print();"><label class="bel-space-left-s">Editar</label></button>
           </div>
@@ -2786,15 +2772,15 @@
 
 		<br>
 
-    <div class="bel-grid-row" id="blue_menu_option_22">
-      <div class="bel-col-12">
+    <div class="grid-row" id="blue_menu_option_22">
+      <div class="col-12">
         <div class="blue-menu-title">
           <h1 class="bel-typography bel-typography-h1">Iconografía</h1>
         </div>
       </div>
     </div>
-		<div class="bel-grid-row padding-bottom-xl">
-			<div class="bel-col-12">
+		<div class="grid-row padding-bottom-xl">
+			<div class="col-12">
 				<div class="bel-card">
 					<table id="iconTable">
 						<caption>
@@ -2815,7 +2801,7 @@
 			</div>
 		</div>
 		
-			<div class="grid-row">
+	<div class="grid-row">
 		<div class="col-12">
 			<div class="bel-card">
 				<table id="newIconTable">
@@ -2824,9 +2810,9 @@
 					</caption>
 					<thead>
 						<tr>
-							<th>Nombre</th>
-							<th></th>
-							<th>Size</th>
+							<th>Icono</th>
+							<th>Descripción</th>
+							<th>Tamaños</th>
 							<th>Código</th>
 						</tr>
 					</thead>
@@ -2837,8 +2823,8 @@
 	</div>
 
 		<!-- Modal -->
-    <div class="bel-grid-row" id="blue_menu_option_13">
-			<div class="bel-col-12">
+    <div class="grid-row" id="blue_menu_option_13">
+			<div class="col-12">
         <div class="blue-menu-title">
           <h1 class="bel-typography bel-typography-h1">Modales</h1>
         </div>
@@ -2846,61 +2832,51 @@
 		</div>
 
 		<div class="grid-row">
-		<div class="col-12">
-			<div onclick="openModal('box-modal2','modal2');" style="cursor: pointer">Abrir modal</div>
-			<div id="box-modal2" class="bel-box-modal bel-box-hidden" data-backdrop="static"></div>
-			  <div id="modal2" class="bel-modal bel-modal-l bel-modal-hidden">
-				<div class="bel-grid-row ">
-				  <div class="bel-col-12">
-					<div class="bel-modal-close-btn-cnt bel-space-bottom-m">
-					  <div class="bel-modal-close-btn bel-modal-close-item" onclick="closeModal('box-modal2','modal2');"></div>
-					</div>
-					<div class="bel-modal-padding-m">
-					  <div class="bel-position-center">
-						<p class="bel-typography bel-typography-p">Un modal es una capa que se superpone a las demás quedando
-						en primer plano de nuestra web y dejando en un segundo plano el resto de la página.</p>
-					  </div>
-					  <div class="bel-position-center bel-space-top-l">
-						<button class="bel-btn bel-btn-primary bel-btn-primary-active">Aceptar</button>
-					  </div>
-					</div>
-				  </div>
-				</div>
+			<div class="col-12">
+				<h4 class="bel-typography bel-typography-h4" style="color: red">Modal</h4>
 			</div>
-		</div></div>
-		
+		</div>
+		<div class="grid-row">
+		<div class="col-6">
+			<div onclick="openModal('box-modal2','modal2');" style="cursor: pointer">Abrir modal</div>
+			
+			</div>
+		</div>
 		
 		<div class="grid-row">
 			<div class="col-12">
-				<div id="box-modal3" class="bel-box-modal bel-box-hidden" data-backdrop="static"></div>
+				<div id="box-modal2" class="bel-box-modal bel-box-hidden" data-backdrop="static"></div>
 			</div>
-			<div id="modal3" class="col-8 col-md-5 col-lg-6 bel-modal-hidden bel-modal bel-padding-l">
-				<div class="col-12 bel-space-bottom-m bel-padding-reset">
-					<div class="bel-padding-bottom-l">
-						<div class="bel-modal-close-btn bel-modal-close-item" onclick="closeModal('box-modal3','modal3');"></div>
+			<div id="modal2" class="col-8 col-md-5 col-lg-6 bel-modal-hidden bel-modal bel-padding-l">
+					<div class="col-12 bel-space-bottom-m bel-padding-reset">
+						<div class="bel-padding-bottom-l">
+						  <div class="bel-modal-close-btn bel-modal-close-item" onclick="closeModal('box-modal2','modal2');"></div>
+						</div>
 					</div>
-				</div>
-				<div class="col-12 bel-position-center bel-padding-left-l bel-padding-right-l bel-padding-bottom-l">						
-					<p class="bel-typography bel-typography-p">Este es un modal responsivo. Por lo cuál se ajustará 
-					según el tipo de pantalla</p>			
-				</div>
-				<div class="col-12 bel-space-top-l display-flex justify-content-center">					  
-					<button class="bel-btn bel-btn-primary bel-btn-primary-active">Aceptar</button>
-				</div>
+					<div class="col-12 bel-position-center bel-padding-left-l bel-padding-right-l bel-padding-bottom-l">
+						
+						<p class="bel-typography bel-typography-p">Un modal es una capa que se superpone a las demás quedando en primer plano de nuestra web y dejando en un segundo plano el resto de la página.</p>
+				
+					</div>
+					<div class="col-12 bel-space-top-l display-flex justify-content-center">
+					  
+						<button class="bel-btn bel-btn-primary bel-btn-primary-active">Aceptar</button>
+					  
+					</div>
 			</div>   
 		</div>  
 
 				<!-- Adjuntar archivos -->
 <br>
-    <div class="bel-grid-row" id="blue_menu_option_14">
-			<div class="bel-col-12">
+    <div class="grid-row" id="blue_menu_option_14">
+			<div class="col-12">
         <div class="blue-menu-title">
-          <h1 class="bel-typography bel-typography-h1">Modales</h1>
+          <h1 class="bel-typography bel-typography-h1">Adjuntar Archivos</h1>
         </div>
 			</div>
 		</div>
 
-		<div class="bel-col-12">
+		<div class="col-12">
 		     <div class="bel-card" >
        			 <h2 class="bel-typography bel-typography-h2">Adjuntar Archivos</h2>
        			 <input  id= "dragPlugin"  name="fileInput[]"  type="file" multiple="true" />
@@ -2908,44 +2884,44 @@
 		</div>
 
 		<!-- Paginador -->
-    <div class="bel-grid-row" id="blue_menu_option_15">
-	  <div class="bel-col-12">
+    <div class="grid-row" id="blue_menu_option_15">
+	  <div class="col-12">
         <div class="blue-menu-title">
           <h1 class="bel-typography bel-typography-h1">Paginador</h1>
         </div>
 	  </div>
 	</div>
 
-	<div class="bel-grid-row bel-space-bottom-m">
-	  <div class="bel-col-12">
+	<div class="grid-row bel-space-bottom-m">
+	  <div class="col-12">
 	    <div class="bel-card">
-	      <div id="paginationExample" class="bel-grid-row">
-	        <div class="bel-col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 1</p></div></div>
-	        <div class="bel-col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 2</p></div></div>
-	        <div class="bel-col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 3</p></div></div>
-	        <div class="bel-col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 4</p></div></div>
-	        <div class="bel-col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 5</p></div></div>
-	        <div class="bel-col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 6</p></div></div>
-	        <div class="bel-col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 7</p></div></div>
-	        <div class="bel-col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 8</p></div></div>
-	        <div class="bel-col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 9</p></div></div>
-	        <div class="bel-col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 10</p></div></div>
-	        <div class="bel-col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 11</p></div></div>
-	        <div class="bel-col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 12</p></div></div>
-	        <div class="bel-col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 13</p></div></div>
-	        <div class="bel-col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 14</p></div></div>
-	        <div class="bel-col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 15</p></div></div>
-	        <div class="bel-col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 16</p></div></div>
-	        <div class="bel-col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 17</p></div></div>
-	        <div class="bel-col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 18</p></div></div>
-	        <div class="bel-col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 19</p></div></div>
-	        <div class="bel-col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 20</p></div></div>
-	        <div class="bel-col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 21</p></div></div>
-	        <div class="bel-col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 22</p></div></div>
-	        <div class="bel-col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 23</p></div></div>
-	        <div class="bel-col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 24</p></div></div>
-	        <div class="bel-col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 25</p></div></div>
-	        <div class="bel-col-12 bel-position-center bel-space-top-l bel-space-bottom-l">
+	      <div id="paginationExample" class="grid-row">
+	        <div class="col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 1</p></div></div>
+	        <div class="col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 2</p></div></div>
+	        <div class="col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 3</p></div></div>
+	        <div class="col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 4</p></div></div>
+	        <div class="col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 5</p></div></div>
+	        <div class="col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 6</p></div></div>
+	        <div class="col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 7</p></div></div>
+	        <div class="col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 8</p></div></div>
+	        <div class="col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 9</p></div></div>
+	        <div class="col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 10</p></div></div>
+	        <div class="col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 11</p></div></div>
+	        <div class="col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 12</p></div></div>
+	        <div class="col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 13</p></div></div>
+	        <div class="col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 14</p></div></div>
+	        <div class="col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 15</p></div></div>
+	        <div class="col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 16</p></div></div>
+	        <div class="col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 17</p></div></div>
+	        <div class="col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 18</p></div></div>
+	        <div class="col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 19</p></div></div>
+	        <div class="col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 20</p></div></div>
+	        <div class="col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 21</p></div></div>
+	        <div class="col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 22</p></div></div>
+	        <div class="col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 23</p></div></div>
+	        <div class="col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 24</p></div></div>
+	        <div class="col-4 paginationItem bel-position-center bel-space-bottom-xs"><div class="bel-main-background bel-padding-top-l bel-padding-bottom-l"><p class="bel-typography bel-typography_size-m">Item 25</p></div></div>
+	        <div class="col-12 bel-position-center bel-space-top-l bel-space-bottom-l">
 	          <nav id="pagination1"></nav>
 	        </div>
 	      </div>
@@ -2955,8 +2931,8 @@
 
 		<!-- Espacios -->
 
-    <div class="bel-grid-row" id="blue_menu_option_16">
-			<div class="bel-col-12">
+    <div class="grid-row" id="blue_menu_option_16">
+			<div class="col-12">
         <div class="blue-menu-title">
           <h1 class="bel-typography bel-typography-h1">Espaciados</h1>
         </div>
@@ -2983,9 +2959,9 @@
 		</style>
 
 
-		<div class="bel-grid-container">
-  <div class="bel-grid-row" style="padding: 10px; margin-left: 10px">
-    <div class="bel-col-12">
+		<div class="grid-container">
+  <div class="grid-row" style="padding: 10px; margin-left: 10px">
+    <div class="col-12">
       <div class="space-lr bel-space-right-xs">bel-space-right-xs</div>
       <div class="space-lr bel-space-right-s">bel-space-right-s</div>
       <div class="space-lr bel-space-right-m">bel-space-right-m</div>
@@ -3016,10 +2992,10 @@
     }
   </style>
 
-  <div class="bel-grid-container">
-   <div class="bel-col-12">
-  <div class="bel-grid-row" style="padding: 10px; margin-left: 10px">
-  <div class="bel-grid-row" style="padding: 10px; margin-left: 10px">
+  <div class="grid-container">
+   <div class="col-12">
+  <div class="grid-row" style="padding: 10px; margin-left: 10px">
+  <div class="grid-row" style="padding: 10px; margin-left: 10px">
 
       <div class="space-lr" style="width: 20px;height: 37px;"></div>
       <div class="space-lr bel-space-left-xs">bel-space-left-xs</div>
@@ -3040,8 +3016,8 @@
     }
       </style>
 
-  <div class="bel-grid-row">
-    <div class="bel-col-12">
+  <div class="grid-row">
+    <div class="col-12">
       <div class="bel-float-left">
         <div class="position">
           <p>bel-float-left</p>
@@ -3050,8 +3026,8 @@
      </div>
   </div>
 
-  <div class="bel-grid-row">
-    <div class="bel-col-12">
+  <div class="grid-row">
+    <div class="col-12">
       <div class="bel-float-center">
         <div class="position">
           <p>bel-float-center</p>
@@ -3060,8 +3036,8 @@
      </div>
   </div>
 
-  <div class="bel-grid-row">
-    <div class="bel-col-12">
+  <div class="grid-row">
+    <div class="col-12">
       <div class="bel-float-right">
         <div class="position">
           <p>bel-float-right</p>
@@ -3069,9 +3045,10 @@
       </div>
      </div>
   </div>
-    <div style="width: 600px" class="bel-space-top-l">
+  <div class="grid-row">  
+    <div class="bel-space-top-l col-6">
 	 	<div id="myIdtext">
-		      	<p id="textareaID" class="bel-typography bel-typography-p">
+			<p id="textareaID" class="bel-typography bel-typography-p">
 			      	standard Lorem Ipsum passage, used since the 1500s What is Lorem IpsumLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 				   standard Lorem Ipsum passage, used since the 1500s What is Lorem IpsumLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 				 	standard Lorem Ipsum passage, used since the 1500s What is Lorem IpsumLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -3080,49 +3057,50 @@
 				   s
 		 	   </p>
 	    </div>
-
-
-    <!-- Margin izquierdo -->
-
    	</div>
-	 <br>
-  <br>
+  </div>
+			<br>
 		<br>
-	  <div class="bel-grid-row" id="blue_menu_option_17">
-      <div class="bel-col-12">
+
+
+
+  <br>
+	    <!-- Margin izquierdo -->
+    <div class="grid-row" id="blue_menu_option_17">
+      <div class="col-12">
         <div class="blue-menu-title">
           <h1 class="bel-typography bel-typography-h1">Barra de progreso</h1>
         </div>
       </div>
     </div>
-		<div class="bel-grid-row">
-			<div class="bel-col-10">
+		<div class="grid-row">
+			<div class="col-10">
 					<div id="loading"></div>
 			</div>
-			<div class="bel-col-7">
+			<div class="col-6 col-md-8 col-sm-12">
 					<div id="loading2"></div>
 			</div>
-			<div class="bel-col-6">
+			<div class="col-6 col-md-8 col-sm-12">
 					<div id="loading3"></div>
 			</div>
 		</div>
-		<div class="bel-grid-row">
-				<div class="bel-col-4">
+		<div class="grid-row">
+				<div class="col-4">
 					<div id="loading4"></div>
 				</div>
 		  </div>
     <br>
     		<!-- tabla con paginador y buscador-->
-        <div class="bel-grid-row" id="blue_menu_option_18">
-			<div class="bel-col-12">
+        <div class="grid-row" id="blue_menu_option_18">
+			<div class="col-12">
             <div class="blue-menu-title">
               <h1 class="bel-typography bel-typography-h1">Otras tablas</h1>
             </div>
 			</div>
 		</div>
     <br>
-    <div class="bel-grid-row bel-space-bottom-m">
-  <div class="bel-col-12">
+    <div class="grid-row bel-space-bottom-m">
+  <div class="col-12">
     <div class="bel-card">
       <table id="newTable" >
         <caption id="caption3" class="bel-table_caption">
@@ -3334,8 +3312,8 @@
   </div>
 </div>
 
-    <div class="bel-grid-row bel-space-bottom-m">
-  <div class="bel-col-12">
+    <div class="grid-row bel-space-bottom-m">
+  <div class="col-12">
     <div class="bel-card">
       <table id="trackTable">
         <thead >
@@ -3479,8 +3457,8 @@
   </div>
 </div>
 
-      <div class="bel-grid-row bel-space-bottom-m">
-        <div class="bel-col-12">
+      <div class="grid-row bel-space-bottom-m">
+        <div class="col-12">
           <div class="bel-card">
           <table id="idTableFixed">
             <caption id="idCaptionTableFixed">
@@ -3817,18 +3795,18 @@
     </div>
 </div>
 
-<div class="bel-grid-row" id="blue_menu_option_19">
-  <div class="bel-col-12">
+<div class="grid-row" id="blue_menu_option_19">
+  <div class="col-12">
     <div class="blue-menu-title">
       <h1 class="bel-typography bel-typography-h1">Alineado vertical</h1>
     </div>
   </div>
 </div>
-<div class="bel-grid-row bel-space-bottom-m">
-  <div class="bel-col-12">
+<div class="grid-row bel-space-bottom-m">
+  <div class="col-12">
     <div id="" class="bel-card">
-      <div class="bel-grid-row bel-middle-align-cont">
-          <div class="bel-col-6 bel-float-none bel-padding-reset">
+      <div class="grid-row bel-middle-align-cont">
+          <div class="col-6 bel-float-none bel-padding-reset">
               <div class="bel-space-bottom-s bel-padding-left-xs">
                   <h2 id="objectiveName" class="bel-typography bel-typography-h2">Obj Normal Dolares</h2></div>
               <div>
@@ -3843,7 +3821,7 @@
               </div>
           </div>
           <!-- LINK CREAR OTRO OBJETIVO -->
-          <div class="bel-col-6 bel-float-none bel-padding-reset bel-position-right" >
+          <div class="col-6 bel-float-none bel-padding-reset bel-position-right" >
               <button id="newBacGoalButton" class="bel-btn bel-btn-secondary bel-btn-secondary-active" type="button" ondblclick="return false;" onclick="partialSubmit( '/ebac/module/bacgoals/newBacGoal.go' );">
                   Crear otro objetivo
               </button>
@@ -3853,8 +3831,9 @@
   </div>
 </div>
 
-	<div class="bel-grid-row" id="blue_menu_option_23">
-		<div class="bel-col-12">
+
+	<div class="grid-row" id="blue_menu_option_23">
+		<div class="col-12">
 			<div class="blue-menu-title">
 				<h1 class="bel-typography bel-typography-h1">Cards alineados horizontalmente</h1>
 			</div>
@@ -3971,10 +3950,10 @@
 			</div>
 		</div>
 	</div>
-	
 
-	<div class="bel-grid-row bel-space-bottom-s">
-                  <div class="bel-col-8">
+
+	<div class="grid-row bel-space-bottom-s">
+                  <div class="col-12 col-sm-10 col-md-8 col-lg-8 col-xl-8">
                     <div class="bel-space-bottom-s">
                       <label for="blueSliderCurrency" class="bel-typography bel-typography-label">Nuevo l&iacute;mite</label>
                     </div>
@@ -3988,19 +3967,19 @@
                   </div>
     </div>
 
- <div class="grid-row bel-space-top-xl">
-  <div class="col-12">
-    <div class="blue-menu-title">
-      <h1 class="bel-typography bel-typography-h1">Reordenando</h1>
-      <h3 class="bel-typography bel-typography-h3 bel-display-block">Clases "order"</h3>
-      <h4 class="bel-typography bel-typography-h4 bel-display-block display-sm-none">Sucesión de Fibonacci</h4>
-      <h4 class="bel-typography bel-typography-h4 bel-display-none display-sm-block display-md-none">Números pares primero</h4>
-      <h4 class="bel-typography bel-typography-h4 bel-display-none display-md-block display-lg-none">Números impares primero</h4>
-      <h4 class="bel-typography bel-typography-h4 bel-display-none display-lg-block display-xl-none">Números de mayor a menor</h4>
-      <h4 class="bel-typography bel-typography-h4 bel-display-none display-xl-block">Números de menor a mayor</h4>
-    </div>
-  </div>
-</div>   
+	 <div class="grid-row bel-space-top-xl">
+	  <div class="col-12">
+		<div class="blue-menu-title">
+		  <h1 class="bel-typography bel-typography-h1">Reordenando</h1>
+		  <h3 class="bel-typography bel-typography-h3 bel-display-block">Clases "order"</h3>
+		  <h4 class="bel-typography bel-typography-h4 bel-display-block display-sm-none">Sucesión de Fibonacci</h4>
+		  <h4 class="bel-typography bel-typography-h4 bel-display-none display-sm-block display-md-none">Números pares primero</h4>
+		  <h4 class="bel-typography bel-typography-h4 bel-display-none display-md-block display-lg-none">Números impares primero</h4>
+		  <h4 class="bel-typography bel-typography-h4 bel-display-none display-lg-block display-xl-none">Números de mayor a menor</h4>
+		  <h4 class="bel-typography bel-typography-h4 bel-display-none display-xl-block">Números de menor a mayor</h4>
+		</div>
+	  </div>
+	</div>                
 	<div class="grid-row bel-space-top-m">
 		<div class="col-1 order-sm-2 order-md-1 order-lg-12 order-xl-1">
 			<button class="bel-btn bel-btn-primary bel-btn-primary-disabled btn-block display-flex justify-content-center align-items-center">
@@ -4063,265 +4042,256 @@
 		</div>
 	</div>
 	
-	<div class="grid-row position-sticky bottom-reset stack-order-fixed">
-		<div class="col-12">
-			<button class="bel-btn-primary bel-btn-primary-active bel-space-top-m btn-block ">Aceptar</button>
+	<div class="grid-row">
+		<div class="col-12 blue-menu-title">
+		  <h1 class="bel-typography bel-typography-h1">Highlight</h1>
 		</div>
-	</div>
+	  </div>
+	  <div class="grid-row">
+		<div class="col-3">
+		  <i class="highlight neutral-medium animation-count_infinite"></i>
+		</div>
+		<div class="col-3">
+		  <i class="highlight neutral-extrahigh animation-count_xs"></i>
+		</div>
+		<div class="col-3">
+		  <i class="highlight informative-medium animation-count_s"></i>
+		</div>
+		<div class="col-3">
+		  <i class="highlight interaction-low animation-count_m"></i>
+		</div>
+		<div class="col-3">
+		  <i class="highlight positive-medium animation-count_l"></i>
+		</div>
+		<div class="col-3">
+		  <i class="highlight attention-low animation-count_infinite"></i>
+		</div>
+		<div class="col-3">
+		  <i class="highlight critical-low animation-count_infinite"></i>
+		</div>
+		<div class="col-3">
+		  <i class="highlight auxiliar-low animation-count_infinite"></i>
+		</div>
+		<div class="col-3">
+		  <i class="status-tag__icon bel-icon-arrow-right-xl"></i>
+		</div>
+		<div class="col-3">
+		  <i class="status-tag__icon bel-icon-car-xxs"></i>
+		</div>
+		<div class="col-3">
+		  <i class="status-tag__icon bel-icon-infotip-l"></i>
+		</div>
+		<div class="col-3">
+		  <i class="status-tag__icon bel-icon-logo-s"></i>
+		</div>
+	 </div>
+	 
+	 <div class="grid-row">
+		<div class="col-12 blue-menu-title">
+		   <h1 class="bel-typography bel-typography-h1">Status tag (Labels)</h1>
+		</div>
+	  </div>
+	  <div class="grid-row margin-bottom-l">
+		 <div class="col-12 col-sm-3 margin-bottom-s">
+		  <div class="status-tag neutral-medium">
+			<p class="status-tag__txt font-weight-semibold margin-left-xs">Detenido</p>
+		 </div>
+		</div>
+		
+		<div class="col-12 col-sm-3 margin-bottom-s">
+		  <div class="status-tag neutral-extrahigh">
+			<p class="status-tag__txt font-weight-semibold margin-left-xs">Detenido</p>
+		  </div>
+		</div>
+		<div class="col-12 col-sm-3 margin-bottom-s">
+		  <div class="status-tag informative-medium">
+			<p class="status-tag__txt font-weight-semibold margin-left-xs">Documentos pendientes</p>
+		  </div>
+		</div>
+		<div class="col-12 col-sm-3 margin-bottom-s">
+		  <div class="status-tag interaction-low">
+			<p class="status-tag__txt font-weight-semibold margin-left-xs">Enviado</p>
+		  </div>
+		</div>
+		<div class="col-12 col-sm-3 margin-bottom-s">
+		  <div class="status-tag positive-medium">
+			<p class="status-tag__txt font-weight-semibold margin-left-xs">Aprobado</p>
+		  </div>
+		</div>
+		<div class="col-12 col-sm-3 margin-bottom-s">
+		  <div class="status-tag attention-low">
+			<p class="status-tag__txt font-weight-semibold margin-left-xs">Pendiente</p>
+		  </div>
+		</div>
+		<div class="col-12 col-sm-3 margin-bottom-s">
+		  <div class="status-tag critical-low">
+			<p class="status-tag__txt font-weight-semibold margin-left-xs">Reprobado</p>
+		  </div>
+		</div>
+		<div class="col-12 col-sm-3 margin-bottom-s">
+		  <div class="status-tag auxiliar-low">
+			<p class="status-tag__txt font-weight-semibold margin-left-xs">Premium</p>
+		  </div>
+		</div>
+	  </div> 
 
-  <div class="grid-row">
-    <div class="col-12 blue-menu-title">
-      <h1 class="bel-typography bel-typography-h1">Highlight</h1>
-    </div>
-  </div>
-  <div class="grid-row">
-	<div class="col-3">
-      <i class="highlight neutral-medium animation-count_infinite"></i>
-    </div>
-    <div class="col-3">
-      <i class="highlight neutral-extrahigh animation-count_xs"></i>
-    </div>
-    <div class="col-3">
-      <i class="highlight informative-medium animation-count_s"></i>
-    </div>
-    <div class="col-3">
-      <i class="highlight interaction-low animation-count_m"></i>
-    </div>
-    <div class="col-3">
-      <i class="highlight positive-medium animation-count_l"></i>
-    </div>
-    <div class="col-3">
-      <i class="highlight attention-low animation-count_infinite"></i>
-    </div>
-    <div class="col-3">
-      <i class="highlight critical-low animation-count_infinite"></i>
-    </div>
-    <div class="col-3">
-      <i class="highlight auxiliar-low animation-count_infinite"></i>
-    </div>
-    <div class="col-3">
-      <i class="status-tag__icon bel-icon-arrow-right-xl"></i>
-    </div>
-    <div class="col-3">
-      <i class="status-tag__icon bel-icon-car-xxs"></i>
-    </div>
-	<div class="col-3">
-      <i class="status-tag__icon bel-icon-infotip-l"></i>
-    </div>
-	<div class="col-3">
-      <i class="status-tag__icon bel-icon-logo-s"></i>
-    </div>
- </div>
- 
- 
- <div class="grid-row">
-    <div class="col-12 blue-menu-title">
-       <h1 class="bel-typography bel-typography-h1">Status tag (Labels)</h1>
-    </div>
-  </div>
-  <div class="grid-row margin-bottom-l">
-     <div class="col-12 col-sm-3 margin-bottom-s">
-      <div class="status-tag neutral-medium">
-        <p class="status-tag__txt font-weight-semibold margin-left-xs">Detenido</p>
-     </div>
-    </div>
+	  <div class="grid-row margin-bottom-l">
+		<div class="col-12 col-sm-3 margin-bottom-s">
+		  <div class="status-tag neutral-medium">
+			<i class="highlight neutral-medium animation-count_infinite"></i>
+			<p class="status-tag__txt font-weight-semibold margin-left-xs">Detenido</p>
+		  </div>
+		</div>
+		<div class="col-12 col-sm-3 margin-bottom-s">
+		  <div class="status-tag neutral-extrahigh">
+			<i class="highlight neutral-extrahigh animation-count_infinite"></i>
+			<p class="status-tag__txt font-weight-semibold margin-left-xs">Detenido</p>
+		 </div>
+		</div>
+		<div class="col-12 col-sm-3 margin-bottom-s">
+		  <div class="status-tag informative-medium">
+			<i class="highlight informative-medium animation-count_infinite"></i>
+			<p class="status-tag__txt font-weight-semibold margin-left-xs">Documentos pendientes</p>
+		  </div>
+		</div>
+		<div class="col-12 col-sm-3 margin-bottom-s">
+		  <div class="status-tag interaction-low">
+			<i class="highlight  interaction-low animation-count_infinite"></i>
+			<p class="status-tag__txt font-weight-semibold margin-left-xs">Enviado</p>
+		  </div>
+		</div>
+		<div class="col-12 col-sm-3 margin-bottom-s">
+		  <div class="status-tag interaction-low">
+			<i class="highlight interaction-low interaction-low animation-count_infinite"></i>
+			<p class="status-tag__txt font-weight-semibold margin-left-xs">Enviado</p>
+		  </div>
+		</div>
+		<div class="col-12 col-sm-3 margin-bottom-s">
+		  <div class="status-tag positive-medium">
+			<i class="highlight positive-medium animation-count_infinite"></i>
+			<p class="status-tag__txt font-weight-semibold margin-left-xs">Aprobado</p>
+		  </div>
+		</div>
+		<div class="col-12 col-sm-3 margin-bottom-s">
+		  <div class="status-tag positive-medium">
+			<i class="highlight positive-medium animation-count_infinite"></i>
+			<p class="status-tag__txt font-weight-semibold margin-left-xs">Aprobado</p>
+		  </div>
+		</div>
+		<div class="col-12 col-sm-3 margin-bottom-s">
+		  <div class="status-tag attention-low">
+			<i class="highlight attention-low animation-count_infinite"></i>
+			<p class="status-tag__txt font-weight-semibold margin-left-xs">Pendiente</p>
+		  </div>
+		</div>
+		<div class="col-12 col-sm-3 margin-bottom-s">
+		  <div class="status-tag attention-low">
+			<i class="highlight attention-low animation-count_infinite"></i>
+			<p class="status-tag__txt font-weight-semibold margin-left-xs">Pendiente</p>
+		  </div>
+		</div>
+		<div class="col-12 col-sm-3 margin-bottom-s">
+		  <div class="status-tag critical-low">
+			<i class="highlight critical-low animation-count_infinite"></i>
+			<p class="status-tag__txt font-weight-semibold margin-left-xs">Reprobado</p>
+		  </div>
+		</div>
+		<div class="col-12 col-sm-3 margin-bottom-s">
+		  <div class="status-tag critical-low">
+			<i class="highlight critical-low animation-count_infinite"></i>
+			<p class="status-tag__txt font-weight-semibold margin-left-xs">Reprobado</p>
+		  </div>
+		</div>
+		<div class="col-12 col-sm-3 margin-bottom-s">
+		  <div class="status-tag auxiliar-low">
+			<i class="highlight auxiliar-low animation-count_infinite"></i>
+			<p class="status-tag__txt font-weight-semibold margin-left-xs">Premium</p>
+		  </div>
+		</div>
+	  </div>
+
+	  <div class="grid-row margin-bottom-m">
+		<div class="col-12 col-sm-3 margin-bottom-s">
+		  <div class="status-tag neutral-medium">
+			<i class="status-tag__icon margin-left-xs  bel-icon-pension-fund-xxs"></i>
+			<p class="status-tag__txt font-weight-semibold margin-left-xs">Detenido</p>
+		  </div>
+		</div>
+		<div class="col-12 col-sm-3 margin-bottom-s">
+		  <div class="status-tag neutral-extrahigh">
+			<i class="status-tag__icon margin-left-xs bel-icon-automatic-payment-xl"></i>
+			<p class="status-tag__txt font-weight-semibold margin-left-xs">Detenido</p>
+		  </div>
+		</div>
+		<div class="col-12 col-sm-3 margin-bottom-s">
+		  <div class="status-tag informative-medium">
+			<i class="status-tag__icon margin-left-xs  bel-icon-total-account-l"></i>
+			<p class="status-tag__txt font-weight-semibold margin-left-xs">Documentos pendientes</p>
+		  </div>
+		</div>
+		<div class="col-12 col-sm-3 margin-bottom-s">
+		  <div class="status-tag interaction-low">
+			<i class="status-tag__icon margin-left-xs bel-icon-car-l"></i>
+			<p class="status-tag__txt font-weight-semibold margin-left-xs">Enviado</p>
+		  </div>
+		</div>
+		<div class="col-12 col-sm-3 margin-bottom-s">
+		  <div class="status-tag positive-medium">
+			<i class="status-tag__icon margin-left-xs bel-icon-education-xl"></i>
+			<p class="status-tag__txt font-weight-semibold margin-left-xs">Aprobado</p>
+		  </div>
+		</div>
+		<div class="col-12 col-sm-3 margin-bottom-s">
+		  <div class="status-tag positive-medium">
+			<i class="status-tag__icon margin-left-xs bel-icon-success-l"></i>
+			<p class="status-tag__txt font-weight-semibold margin-left-xs">Aprobado</p>
+		  </div>
+		</div>
+		<div class="col-12 col-sm-3 margin-bottom-s">
+		  <div class="status-tag attention-low">
+			<i class="status-tag__icon margin-left-xs bel-icon-professional-associations-xl"></i>
+			<p class="status-tag__txt font-weight-semibold margin-left-xs">Pendiente</p>
+		  </div>
+		</div>
+		<div class="col-12 col-sm-3 margin-bottom-s">
+		  <div class="status-tag attention-low">
+			<i class="status-tag__icon margin-left-xs bel-icon-warning-xl"></i>
+			<p class="status-tag__txt font-weight-semibold margin-left-xs">Pendiente</p>
+		  </div>
+		</div>
+		<div class="col-12 col-sm-3 margin-bottom-s">
+		  <div class="status-tag critical-low">
+			<i class="status-tag__icon margin-left-xs bel-icon-calendar-xl"></i>
+			<p class="status-tag__txt font-weight-semibold margin-left-xs">Reprobado</p>
+		  </div>
+		</div>
+		<div class="col-12 col-sm-3 margin-bottom-s">
+		  <div class="status-tag critical-low">
+			<i class="status-tag__icon margin-left-xs bel-icon-reload-xxs"></i>
+			<p class="status-tag__txt font-weight-semibold margin-left-xs">Reprobado</p>
+		  </div>
+		</div>
+		<div class="col-12 col-sm-3 margin-bottom-s">
+		  <div class="status-tag auxiliar-low">
+			<i class="status-tag__icon margin-left-xs bel-icon-foundations-and-donations-xl"></i>
+			<p class="status-tag__txt font-weight-semibold margin-left-xs">Premium</p>
+		  </div>
+		</div>
+		<div class="col-12 col-sm-3 margin-bottom-s">
+		  <div class="status-tag auxiliar-low">
+			<i class="status-tag__icon margin-left-xs bel-icon-public-services-xl"></i>
+			<p class="status-tag__txt font-weight-semibold margin-left-xs">Premium</p>
+		  </div>
+		</div>
+	  </div>			
 	
-    <div class="col-12 col-sm-3 margin-bottom-s">
-      <div class="status-tag neutral-extrahigh">
-        <p class="status-tag__txt font-weight-semibold margin-left-xs">Detenido</p>
-      </div>
-    </div>
-    <div class="col-12 col-sm-3 margin-bottom-s">
-      <div class="status-tag informative-medium">
-        <p class="status-tag__txt font-weight-semibold margin-left-xs">Documentos pendientes</p>
-      </div>
-    </div>
-    <div class="col-12 col-sm-3 margin-bottom-s">
-      <div class="status-tag interaction-low">
-        <p class="status-tag__txt font-weight-semibold margin-left-xs">Enviado</p>
-      </div>
-    </div>
-    <div class="col-12 col-sm-3 margin-bottom-s">
-      <div class="status-tag positive-medium">
-        <p class="status-tag__txt font-weight-semibold margin-left-xs">Aprobado</p>
-      </div>
-    </div>
-    <div class="col-12 col-sm-3 margin-bottom-s">
-      <div class="status-tag attention-low">
-        <p class="status-tag__txt font-weight-semibold margin-left-xs">Pendiente</p>
-      </div>
-    </div>
-    <div class="col-12 col-sm-3 margin-bottom-s">
-      <div class="status-tag critical-low">
-        <p class="status-tag__txt font-weight-semibold margin-left-xs">Reprobado</p>
-      </div>
-    </div>
-    <div class="col-12 col-sm-3 margin-bottom-s">
-      <div class="status-tag auxiliar-low">
-        <p class="status-tag__txt font-weight-semibold margin-left-xs">Premium</p>
-      </div>
-    </div>
-  </div>
-  
-  
-
-  <div class="grid-row margin-bottom-l">
-    <div class="col-12 col-sm-3 margin-bottom-s">
-      <div class="status-tag neutral-medium">
-        <i class="highlight neutral-medium animation-count_infinite"></i>
-        <p class="status-tag__txt font-weight-semibold margin-left-xs">Detenido</p>
-      </div>
-    </div>
-	<div class="col-12 col-sm-3 margin-bottom-s">
-      <div class="status-tag neutral-extrahigh">
-        <i class="highlight neutral-extrahigh animation-count_infinite"></i>
-        <p class="status-tag__txt font-weight-semibold margin-left-xs">Detenido</p>
-     </div>
-    </div>
-    <div class="col-12 col-sm-3 margin-bottom-s">
-      <div class="status-tag informative-medium">
-        <i class="highlight informative-medium animation-count_infinite"></i>
-        <p class="status-tag__txt font-weight-semibold margin-left-xs">Documentos pendientes</p>
-      </div>
-    </div>
-    <div class="col-12 col-sm-3 margin-bottom-s">
-      <div class="status-tag interaction-low">
-        <i class="highlight  interaction-low animation-count_infinite"></i>
-        <p class="status-tag__txt font-weight-semibold margin-left-xs">Enviado</p>
-      </div>
-    </div>
-    <div class="col-12 col-sm-3 margin-bottom-s">
-      <div class="status-tag interaction-low">
-        <i class="highlight interaction-low interaction-low animation-count_infinite"></i>
-        <p class="status-tag__txt font-weight-semibold margin-left-xs">Enviado</p>
-      </div>
-    </div>
-    <div class="col-12 col-sm-3 margin-bottom-s">
-      <div class="status-tag positive-medium">
-        <i class="highlight positive-medium animation-count_infinite"></i>
-        <p class="status-tag__txt font-weight-semibold margin-left-xs">Aprobado</p>
-      </div>
-    </div>
-    <div class="col-12 col-sm-3 margin-bottom-s">
-      <div class="status-tag positive-medium">
-        <i class="highlight positive-medium animation-count_infinite"></i>
-        <p class="status-tag__txt font-weight-semibold margin-left-xs">Aprobado</p>
-      </div>
-    </div>
-    <div class="col-12 col-sm-3 margin-bottom-s">
-      <div class="status-tag attention-low">
-        <i class="highlight attention-low animation-count_infinite"></i>
-        <p class="status-tag__txt font-weight-semibold margin-left-xs">Pendiente</p>
-      </div>
-    </div>
-    <div class="col-12 col-sm-3 margin-bottom-s">
-      <div class="status-tag attention-low">
-        <i class="highlight attention-low animation-count_infinite"></i>
-        <p class="status-tag__txt font-weight-semibold margin-left-xs">Pendiente</p>
-      </div>
-    </div>
-    <div class="col-12 col-sm-3 margin-bottom-s">
-      <div class="status-tag critical-low">
-        <i class="highlight critical-low animation-count_infinite"></i>
-        <p class="status-tag__txt font-weight-semibold margin-left-xs">Reprobado</p>
-      </div>
-    </div>
-    <div class="col-12 col-sm-3 margin-bottom-s">
-      <div class="status-tag critical-low">
-        <i class="highlight critical-low animation-count_infinite"></i>
-        <p class="status-tag__txt font-weight-semibold margin-left-xs">Reprobado</p>
-      </div>
-    </div>
-    <div class="col-12 col-sm-3 margin-bottom-s">
-      <div class="status-tag auxiliar-low">
-        <i class="highlight auxiliar-low animation-count_infinite"></i>
-        <p class="status-tag__txt font-weight-semibold margin-left-xs">Premium</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="grid-row margin-bottom-m">
-    <div class="col-12 col-sm-3 margin-bottom-s">
-      <div class="status-tag neutral-medium">
-        <i class="status-tag__icon margin-left-xs  bel-icon-pension-fund-xxs"></i>
-        <p class="status-tag__txt font-weight-semibold margin-left-xs">Detenido</p>
-      </div>
-    </div>
-    <div class="col-12 col-sm-3 margin-bottom-s">
-      <div class="status-tag neutral-extrahigh">
-        <i class="status-tag__icon margin-left-xs bel-icon-automatic-payment-xl"></i>
-        <p class="status-tag__txt font-weight-semibold margin-left-xs">Detenido</p>
-      </div>
-    </div>
-    <div class="col-12 col-sm-3 margin-bottom-s">
-      <div class="status-tag informative-medium">
-        <i class="status-tag__icon margin-left-xs  bel-icon-total-account-l"></i>
-        <p class="status-tag__txt font-weight-semibold margin-left-xs">Documentos pendientes</p>
-      </div>
-    </div>
-    <div class="col-12 col-sm-3 margin-bottom-s">
-      <div class="status-tag interaction-low">
-        <i class="status-tag__icon margin-left-xs bel-icon-car-l"></i>
-        <p class="status-tag__txt font-weight-semibold margin-left-xs">Enviado</p>
-      </div>
-    </div>
-    <div class="col-12 col-sm-3 margin-bottom-s">
-      <div class="status-tag positive-medium">
-        <i class="status-tag__icon margin-left-xs bel-icon-education-xl"></i>
-        <p class="status-tag__txt font-weight-semibold margin-left-xs">Aprobado</p>
-      </div>
-    </div>
-    <div class="col-12 col-sm-3 margin-bottom-s">
-      <div class="status-tag positive-medium">
-        <i class="status-tag__icon margin-left-xs bel-icon-success-l"></i>
-        <p class="status-tag__txt font-weight-semibold margin-left-xs">Aprobado</p>
-      </div>
-    </div>
-    <div class="col-12 col-sm-3 margin-bottom-s">
-      <div class="status-tag attention-low">
-        <i class="status-tag__icon margin-left-xs bel-icon-professional-associations-xl"></i>
-        <p class="status-tag__txt font-weight-semibold margin-left-xs">Pendiente</p>
-      </div>
-    </div>
-    <div class="col-12 col-sm-3 margin-bottom-s">
-      <div class="status-tag attention-low">
-        <i class="status-tag__icon margin-left-xs bel-icon-warning-xl"></i>
-        <p class="status-tag__txt font-weight-semibold margin-left-xs">Pendiente</p>
-      </div>
-    </div>
-    <div class="col-12 col-sm-3 margin-bottom-s">
-      <div class="status-tag critical-low">
-        <i class="status-tag__icon margin-left-xs bel-icon-calendar-xl"></i>
-        <p class="status-tag__txt font-weight-semibold margin-left-xs">Reprobado</p>
-      </div>
-    </div>
-    <div class="col-12 col-sm-3 margin-bottom-s">
-      <div class="status-tag critical-low">
-        <i class="status-tag__icon margin-left-xs bel-icon-reload-xxs"></i>
-        <p class="status-tag__txt font-weight-semibold margin-left-xs">Reprobado</p>
-      </div>
-    </div>
-    <div class="col-12 col-sm-3 margin-bottom-s">
-      <div class="status-tag auxiliar-low">
-        <i class="status-tag__icon margin-left-xs bel-icon-foundations-and-donations-xl"></i>
-        <p class="status-tag__txt font-weight-semibold margin-left-xs">Premium</p>
-      </div>
-    </div>
-    <div class="col-12 col-sm-3 margin-bottom-s">
-      <div class="status-tag auxiliar-low">
-        <i class="status-tag__icon margin-left-xs bel-icon-public-services-xl"></i>
-        <p class="status-tag__txt font-weight-semibold margin-left-xs">Premium</p>
-      </div>
-    </div>
-  </div>	
-  
-   <div class="grid-row margin-top-m">
+	   <div class="grid-row margin-top-m">
     <div class="col-12 blue-menu-title">
       <h1 class="bel-typography bel-typography-h1">Info-tip</h1>
     </div>
   </div>
   <div class="grid-row">
-    <div class="col-1">
+    <div class="col-2 col-sm-1">
       <button class="infotip neutral-extrahigh bel-tooltip-generic">
         <i class="infotip__icon bel-icon-warning-m"></i>
       </button>
@@ -4329,34 +4299,34 @@
 		of the printing and typesetting industry. Lorem Ipsum has been the
 		industry's standard dummy text ever since the 1500s</span>
     </div>
-    <div class="col-1">
+    <div class="col-2 col-sm-1">
       <button class="infotip informative-medium bel-tooltip-generic">
         <i class="infotip__icon bel-icon-payments-l"></i>
       </button>
 	  <span class="bel-tooltip-generic-text">Is simply dummy text
 		of the printing and typesetting industry.</span>
     </div>
-    <div class="col-1">
+    <div class="col-2 col-sm-1">
       <button class="infotip positive-medium">
         <i class="infotip__icon bel-icon-edit-xl"></i>
       </button>
     </div>
-    <div class="col-1">
+    <div class="col-2 col-sm-1">
       <button class="infotip attention-low">
         <i class="infotip__icon bel-icon-foundations-and-donations-xs"></i>
       </button>
     </div>
-    <div class="col-1">
+    <div class="col-2 col-sm-1">
       <button class="infotip critical-low" onClick="openModal('box-modal3','modal3');">
         <i class="infotip__icon bel-icon-professional-associations-xl"></i>
       </button>
     </div>
-    <div class="col-1">
+    <div class="col-2 col-sm-1">
       <button class="infotip auxiliar-low" onClick="openModal('box-modal2','modal2');">
         <i class="infotip__icon bel-icon-affiliated-businesses-xl"></i>
       </button>
     </div>
-	    <div class="col-4">
+	    <div class="col-2 col-sm-1">
       <button class="infotip interaction-low bel-tooltip-generic">
         <i class="infotip__icon bel-icon-home-xl"></i>
       </button>
@@ -4365,10 +4335,73 @@
 	  ¡cuando te das cuenta que vas a perder! (Savielly Tartakower)</span>
 		</div>
 	</div>
+	  <div class="grid-row" id="blue_menu_option_24">
+			<div class="col-12">
+				<div class="blue-menu-title">
+					<h1 class="bel-typography bel-typography-h1">Caja elegible</h1>
+				</div>
+			</div>
+		</div>
+		<div class="grid-row">
+			<div class="col-12 blue-menu-title">
+			  <h3 class="bel-typography bel-typography-h3">Seleccion Unica</h3>
+			</div>
+		</div>
+		<div class="grid-row bel-space-bottom-xl" >
 
-  
+			<div class="col-1" >
+				  <input type="radio"  name="1" value="Radio1" class='eligible-box' id="Radio1"/>
+				  <label class="eligible-box-label bel-truncate-text" for="Radio1">Radio 1</label>
+			</div>
+			<div class="col-4" >
+				<input type="radio" name="1" value="Radio2" class='eligible-box' id="Radio2"/>
+				  <label class="eligible-box-label bel-truncate-text" for="Radio2">Radio 2</label>
+			</div>
+			<div class="col-2" >
+                <input type="radio" name="1" value="Radio3" class='eligible-box' id="Radio3"/>
+				  <label class="eligible-box-label bel-truncate-text" for="Radio3">Radio 3</label>
+			</div>
+			<div class="col-3" >
+                <input type="radio" name="1" class='eligible-box' value="Radio4" id="Radio4"/>
+                <label class="eligible-box-label bel-truncate-text" for="Radio4">Radio 4</label>				
+			</div>
+		</div>
+		<div class="grid-row">
+			<div class="col-12 blue-menu-title">
+			  <h3 class="bel-typography bel-typography-h3">Seleccion Multiple</h3>
+			</div>
+		</div>
+		<div class="grid-row" >
+			<div class="col-2" >
+				<input type="checkbox"  class='eligible-box' value="checkbox1"  id="checkbox1"/>
+				 <label class="eligible-box-label bel-truncate-text" for="checkbox1">checkbox 1</label>	
+			</div>                                  
+			<div class="col-3" >                     
+				<input type="checkbox"  class='eligible-box' value="checkbox2" id="checkbox2"/>
+				 <label class="eligible-box-label bel-truncate-text" for="checkbox2">checkbox 2</label>	
+			</div>                                 
+			<div class="col-2" >                     
+                <input type="checkbox"  class='eligible-box' value="checkbox3" id="checkbox3"/>
+				 <label class="eligible-box-label bel-truncate-text" for="checkbox3">checkbox 3</label>	
+			</div>                                    
+			<div class="col-4" >                      
+                <input type="checkbox"  class='eligible-box' value="checkbox4" id="checkbox4"/>	
+				<label class="eligible-box-label bel-truncate-text" for="checkbox4">checkbox 4</label>					
+			</div>
+		</div>
+  </div>
+		<div class="grid-row position-sticky justify-content-end bottom-reset stack-order-fixed">
+			<div class="col-2">
+				<button class="bel-btn-primary bel-btn-primary-active bel-space-top-m btn-block ">Aceptar</button>
+			</div>
+		</div>
+ </div>
 </div>
+		
+		
+		
 
+ </div>
 <script type="text/javascript">
 	$BLUEJQuery( document ).ready(function() {
 		$BLUEJQuery("#idTableFixed").blueTable({
@@ -4442,12 +4475,14 @@
 
       <script>
     $BLUEJQuery( document ).ready(function() {
-    $BLUEJQuery("#myId1").blueSelect("xs");
-    $BLUEJQuery("#myId2").blueSelect("s");
-    $BLUEJQuery("#myId3").blueSelect("m");
-    $BLUEJQuery("#myId4").blueSelect("l");
-    $BLUEJQuery("#myId5").blueSelect("l", "en");
-    $BLUEJQuery("#myId6").blueSelect("l");
+ $BLUEJQuery('select[name ="myId1"]').blueSelect("");
+    $BLUEJQuery("#myId2").blueSelect({
+		callbackChange: function (){ console.log("Ejecutar Callback");},
+	});
+    $BLUEJQuery("#myId3").blueSelect("");
+    $BLUEJQuery("#myId4").blueSelect("");
+    $BLUEJQuery("#myId5").blueSelect("", "en");
+    $BLUEJQuery("#myId6").blueSelect("");
     $BLUEJQuery("#myId7").blueSelect("xl");
     $BLUEJQuery("#myId8").blueSelect("xl");
     $BLUEJQuery("#myId9").blueSelect("xl");
@@ -4556,42 +4591,41 @@
 
           });
 		  
-        	var newIcons = [
-		  		'notification','account-balance','security2','account-summary','affiliated-businesses','clock','automotive',
-		  		'business-services','chat','download','email','soccer-ball','requests','loans','investments','certificates',
-		  		'validation-disable','branding','profile','exchange','installments-and-credits','education','schools-and-highschools',
-		  		'foundations-and-donations','funeral-homes','government','hotels','transport','security','christmas','search','vacations',
-		  		'study','default','arrow-up','calendar','infotip','printer','savings','template-onhold','info','warning','success','error','wireless',
-		  		'back','more','transfer','payments','credit-card','account','touchID','edit','arrow-down','receipt','reload','apartments','associations',
-		  		'television','movil','approvals','atm','exchange-new','compass','settings','security-check','contact','warning-sign','infotip-info',
-		  		'exit-new','gym','manage','retirement-new','private-services','products','professional-associations','total-account','telephone-and-internet',
-		  		'suggestions','public-services-guatemala','delete','questionmark','template-approved','template-draft','hide','show','favorite','documents','upload',
-		  		'transfer-onhold','debit-card','subcategory','cancel','lock','blocked-card','gpi','recent','nosignal','loans-stk','phone-stk','pc','business',
-		  		'copy','locked','plus-sign','nfc','merchant','tranfers','thrift','others','credit-loans','tcredit','tdebit','accounts','insurances','alertadvice',
-		  		'cone','faceID','light','industry','taxes','car','others2','gift','share','phone','more-bar','home','apps','exit','forward','timeline','clubs',
-		  		'retirement','whatsapp','share-1','timeout','uni','location','warning2','info2','kash','star','history','duplicate','empty','chat-stk','credit-card-stk',
-		  		'settings-stk','security-check-stk','favorite-stk','services-stk'													
-        	 ];
+      	var newIcons = [
+	  		'notification','account-balance','security2','account-summary','affiliated-businesses','clock','automotive',
+	  		'business-services','chat','download','email','soccer-ball','requests','loans','investments','certificates',
+	  		'validation-disable','branding','profile','exchange','installments-and-credits','education','schools-and-highschools',
+	  		'foundations-and-donations','funeral-homes','government','hotels','transport','security','christmas','search','vacations',
+	  		'study','default','arrow-up','calendar','infotip','printer','savings','template-onhold','info','warning','success','error','wireless',
+	  		'back','more','transfer','payments','credit-card','account','touchID','edit','arrow-down','receipt','reload','apartments','associations',
+	  		'television','movil','approvals','atm','exchange-new','compass','settings','security-check','contact','warning-sign','infotip-info',
+	  		'exit-new','gym','manage','retirement-new','private-services','products','professional-associations','total-account','telephone-and-internet',
+	  		'suggestions','public-services-guatemala','delete','questionmark','template-approved','template-draft','hide','show','favorite','documents','upload',
+	  		'transfer-onhold','debit-card','subcategory','cancel','lock','blocked-card','gpi','recent','nosignal','loans-stk','phone-stk','pc','business',
+	  		'copy','locked','plus-sign','nfc','merchant','tranfers','thrift','others','credit-loans','tcredit','tdebit','accounts','insurances','alertadvice',
+	  		'cone','faceID','light','industry','taxes','car','others2','gift','share','phone','more-bar','home','apps','exit','forward','timeline','clubs',
+	  		'retirement','whatsapp','share-1','timeout','uni','location','warning2','info2','kash','star','history','duplicate','empty','chat-stk','credit-card-stk',
+	  		'settings-stk','security-check-stk','favorite-stk','services-stk'													
+    	 ];
 
 
           var classSizes = ['icon-main__xxs','icon-main__xs', 'icon-main__s', 'icon-main__m', 'icon-main__l', 'icon-main__xl'];
 
           $BLUEJQuery.each(newIcons, function( iconsindex, iconsvalue ) {
-             $BLUEJQuery.each(classSizes, function( sizesindex, sizesvalue ) {
-                var description = '';
-               var textOfSize = sizesvalue.split("__");
-               textOfSize = textOfSize[textOfSize.length - 1];
-                if(sizesindex == 0){
-                   description = iconsvalue;
-                }
-                $BLUEJQuery("#newIconsTbody").append($BLUEJQuery('<tr><td>'+ description +'</td><td><div class="icon-main icon-'+iconsvalue+' '+sizesvalue+'"></div></td><td>'+textOfSize+'</td> <td> <xmp> <div class="icon-main icon-'+iconsvalue+' '+sizesvalue+'"></div>  </xmp> </td></tr>'));
-             });
-          });
+              $BLUEJQuery.each(classSizes, function( sizesindex, sizesvalue ) {
+                 var description = '';
+                var textOfSize = sizesvalue.split("__");
+                textOfSize = textOfSize[textOfSize.length - 1];
+                 if(sizesindex == 0){
+                    description = iconsvalue;
+                 }
+                 $BLUEJQuery("#newIconsTbody").append($BLUEJQuery('<tr><td>'+ description +'</td><td><div class="icon-main icon-'+iconsvalue+' '+sizesvalue+'"></div></td><td>'+textOfSize+'</td> <td> <xmp> <div class="icon-main icon-'+iconsvalue+' '+sizesvalue+'"></div>  </xmp> </td></tr>'));
+              });
+           });
           $BLUEJQuery("#newIconTable").blueTable({
               toggleable:true,
               extensible:true,
               maxItemsCollapsed:6,
- 			 tdWidth:[15, 10, 10, 65],
               extensibleLabel: "Ver m&aacute;s &iacute;conos",
               collapseLabel: "Ocultar &iacute;conos",
               thAlign:["center", "center", "center", "center"],
@@ -4599,7 +4633,6 @@
 
 
           });
-
 
      });
 </script>
@@ -4709,15 +4742,24 @@ $BLUEJQuery(window).on('load', function(){
       function hiddenMenu(){
         if(isMenuVisible == true){
           $BLUEJQuery('#blueMenu').css('display','none');
-          $BLUEJQuery('#hiddenMenuBtn').css('left','-15px');
+          
+		  $BLUEJQuery('#hiddenMenuBtn').css({"left":"-10px","z-index":"2"});
           $BLUEJQuery('#hiddenMenuBtn').removeClass('bel-icon-back-xxs');
           $BLUEJQuery('#hiddenMenuBtn').addClass('bel-icon-arrow-right-xxs');
+		  $BLUEJQuery('#ColumnCuerpo').removeClass('col-9');
+          $BLUEJQuery('#ColumnCuerpo').addClass('col-12');
+		  $BLUEJQuery('#columnMenu').removeClass('col-3');
+          
           isMenuVisible = false;
         } else {
           $BLUEJQuery('#blueMenu').css('display','block');
-          $BLUEJQuery('#hiddenMenuBtn').css('left','235px');
+          $BLUEJQuery('#hiddenMenuBtn').css({"left":"20%","z-index":"0"});
+		
           $BLUEJQuery('#hiddenMenuBtn').removeClass('bel-icon-arrow-right-xxs');
           $BLUEJQuery('#hiddenMenuBtn').addClass('bel-icon-back-xxs');
+		  $BLUEJQuery('#ColumnCuerpo').removeClass('col-12');
+          $BLUEJQuery('#ColumnCuerpo').addClass('col-9');
+		  $BLUEJQuery('#columnMenu').addClass('col-3');
           isMenuVisible = true;
         }
       }
