@@ -15,7 +15,7 @@
 	<body>
 		<div class="grid-container">
 			<div class="grid-row">
-				<div class="col-10 padding-reset">
+				<div class="col-12 padding-reset">
 					<div class="grid-row">
 						<div class="col-12 margin-bottom-m padding-reset">
 							<h1 class="bel-typography bel-typography-h1">Versionamiento de BLUE</h1>
@@ -74,28 +74,75 @@
 						<div class="col-12 margin-bottom-l padding-reset">
 							<h3 class="bel-typography bel-typography-h3">Historico de cambios</h3>
 						</div>
+						
+						<div class="col-12 margin-bottom-l padding-reset">
+							<div class="bel-card bel-full-height" >
+								<div class="grid-row">  
+									<div class="col-12">
+									    <div>
+										   <label class="bel-typography bel-typography-label">Blue: 2.0.0</label>
+										</div>
+										<div>
+											<label class="bel-typography bel-typography-label">Pase: CRI-029512</label>
+										</div>
+										<div>
+											<label class="bel-typography bel-typography-label">Cambios de BLUE:</label>
+											<div class="grid-row">
+			<div class="col-12">
+				<ul class="bel-list">
+					<li class="bel-list__unordered-li">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+					</li>
+					<li class="bel-list__unordered-li">Texto
+					</li>
+					<li class="bel-list__unordered-li">Texto
+					</li>
+				</ul>
+			</div>
+		</div>
+										</div>
+									</div>
+									
+									
+									
+								</div>	
+							</div>
+						</div>
+						
+						<div class="col-12 margin-bottom-l padding-reset">
+							<div class="bel-card bel-full-height" >
+								<div class="grid-row">  
+									<div class="col-12">
+									    <div>
+										   <label class="bel-typography bel-typography-label">Blue: 1.0.0</label>
+										</div>
+										<div>
+											<label class="bel-typography bel-typography-label">Pase: CRI-029512</label>
+										</div>
+										<div>
+											<label class="bel-typography bel-typography-label">Cambios de BLUE:</label>
+											<div class="grid-row">
+			<div class="col-12">
+				<ul class="bel-list">
+					<li class="bel-list__unordered-li">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+					</li>
+					<li class="bel-list__unordered-li">Texto
+					</li>
+					<li class="bel-list__unordered-li">Texto
+					</li>
+				</ul>
+			</div>
+		</div>
+										</div>
+									</div>
+									
+									
+									
+								</div>	
+							</div>
+						</div>
 					</div>
 				</div>
-					<div class="col-2 padding-reset">
-						<!--Menu interno de botones -->
-						
-						<ul>
- <li class="menu-item-has-children">Item 1</li>
-   <ul class="sub-menu">
-     <li>Sub Item 1</li>
-     <li>Sub Item 2</li>
-     <li class="menu-item-has-children">Sub Item 3</li>
-       <ul class="sub-menu">
-         <li>Sub Sub Item 1</li>
-         <li>Sub Sub Item 2</li>
-         <li>Sub Sub Item 3</li>
-         <li>Sub Sub Item 4</li>
-         <li>Sub Sub Item 5</li>
-      </ul>
-   <li>Sub Item 4</li>
-   <li>Sub Item 5</li>
-</ul>
-					</div>
+					
 				</div>
 			</div>
 			<script>
@@ -104,12 +151,8 @@
 
 function getComponentVersion(componentName){
 	var version="0.0";
-	$BLUEJQuery(versionamientoBlue.Versionamiento.VersionActual.Componentes).each(function () {
-		if(this.Nombre==componentName){
-			version=this.Version;
-		}	     
-	});
-
+	
+version=versionamientoBlue.Versionamiento.VersionActual.BLUE;
 return version;
 }
 $BLUEJQuery("#versionText").html($BLUEJQuery("#versionText").text()+" "+getComponentVersion("Botones"));
