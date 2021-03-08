@@ -156,7 +156,14 @@
 				</div>
 			</div>
 			<script>
+				 function lee_json() {
+            $.getJSON("/blue_version_history.json", function(datos) {
+                alert("Dato: " + datos);
+            
+            });
+        }
 		$BLUEJQuery( document ).ready(function(){
+			lee_json()
 $BLUEJQuery("#checkboxHTML").prop("checked",true);
 $BLUEJQuery("#checkboxJS").prop("checked", true);
 function getComponentVersion(componentName){
