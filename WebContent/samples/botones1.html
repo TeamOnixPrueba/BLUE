@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Index - BLUE </title>
+		<link rel="shortcut icon" type="image/png" href="https://rawgit.com/vochy023/b-lue/master/images/bac_icon.png" sizes="16x16"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" href="../g-libreries/fonts/bel-main-fonts.css">
+		<link rel="stylesheet" href="../bel-main-style.css"> 
+		<script type="text/javascript" src="../resources/js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../resources/js/zebra_datepicker.min.js"></script> 
+		<script type="text/javascript" src="../resources/js/bel-main-scripts.js"></script> 
+		<script type="text/javascript" src="blue_version_history_p.js"></script> 
+		
+	</head>
+	<body>
+		<div class="grid-container">
+			<div class="grid-row">
+				<div class="col-12 padding-reset">
+				<div class="grid-row">
+					<div class="col-12 margin-bottom-s padding-reset">
+						<div class="status-tag positive-medium">
+							<p class="status-tag__txt font-weight-semibold margin-left-xs" id="versionText">Version Actual: </p>
+						</div>
+					</div>
+					<div class="col-12 padding-reset margin-bottom-m">
+					<div><p class="bel-typography bel-typography-p">Los botones comunican la acción que va a ocurrir cuando el usuario haga clic sobre ellos.</p> </div>
+                    <div><p class="bel-typography bel-typography-p">En la Banca en línea se manejan distintos tipos de botones dependiendo de la prioridad visual que se le quiera dar.</p></div>
+					</div>
+					<div class="col-12 padding-reset margin-bottom-m margin-top-m">
+					<div class="bel-border-top"></div>
+					</div>
+					<div class="col-12 margin-bottom-m padding-reset">
+						<h1 class="bel-typography bel-typography-h1">Primarios</h1>
+					</div>
+					<div class="col-12 margin-bottom-l padding-reset">
+					<div>
+						<p class="bel-typography bel-typography-p">Representa la acción principal que el usuario va a realizar en un flujo o pantalla.</p>
+					</div>
+					</div>
+				    <div class="col-12 margin-bottom-l padding-reset">
+						<h2 class="bel-typography bel-typography-h2">Código de botones primarios</h2>
+					</div>
+					<div class="col-12 padding-reset">
+						<div class="grid-row"> <!--ejemplo visual -->
+							<div class="col-12">
+								<h3 class="bel-typography bel-typography-h3">Estados</h3>
+							</div>
+							<div class="col-3 margin-top-m">
+								<button class="bel-btn bel-btn-primary bel-btn-primary-active">Habilitado</button>
+							</div>
+							<div class="col-3 margin-top-m">
+								<button class="bel-btn bel-btn-primary bel-btn-primary-disabled">Inhabilitado</button>
+							</div>
+						</div>
+						<div class="grid-row"> <!--ejemplo de código de como hacerlo -->
+							<div class="col-6 margin-top-m">
+							
+							  <input type="checkbox"  class='eligible-box' value="checkboxHTML" id="checkboxHTML" onchange="changeCard()"/>
+								<label class="eligible-box-label bel-truncate-text bel-tooltip-generic" for="checkboxHTML">HTML</label>	
+								<span class="bel-tooltip-generic-text bel-tooltip-generic-text__down ">Click para ocultar o mostrar el código de la sección posterior.</span>
+							</div>
+							<div class="col-6 margin-top-m">
+							
+								<input type="checkbox"  class='eligible-box' value="checkboxJS" id="checkboxJS" onchange="changeCard()"/>
+								<label class="eligible-box-label bel-truncate-text bel-tooltip-generic" for="checkboxJS">JS</label>	
+								<span class="bel-tooltip-generic-text bel-tooltip-generic-text__down">Click para ocultar o mostrar el código de la sección posterior.</span>
+							
+							</div>
+							
+							<div class="col-6" id="cardHTML">
+								<div id="tabs_btn_1-html" class="bel-card bel-full-height" >
+									<div class="grid-row">
+									  <div class="col-6">
+										<h4 class="bel-typography bel-typography-h4">Habilitado</h4>
+									  </div>
+									  <div class="col-6 bel-position-right">
+										<button class="button_clip bel-auxiliary-component" data-clipboard-target="#btn_1"><span class="icon-main icon-main__xs icon-copy"></span><span class="bel-space-left-s">Copiar c&oacute;digo</span></button>
+									  </div>
+									  <div class="col-12">
+										<p style="margin:0;"><code class="language-markup" id="btn_1">&lt;button class="bel-btn bel-btn-primary bel-btn-primary-active">Aceptar&lt;/button></code></p>
+									  </div>
+									</div>
+									<div class="bel-grid-row margin-top-l">
+									  <div class="bel-col-6">
+										<h4 class="bel-typography bel-typography-h4">Inabilitado</h4>
+									  </div>
+									  <div class="bel-col-6 bel-position-right">
+										<button class="button_clip bel-auxiliary-component" data-clipboard-target="#btn_2"><span class="icon-main icon-main__xs icon-copy"></span><span class="bel-space-left-s">Copiar c&oacute;digo</span></button>
+									  </div>
+									  <div class="bel-col-12">
+										<p style="margin:0;"><code class="language-markup" id="btn_2">&lt;button class="bel-btn bel-btn-primary bel-btn-primary-disabled">Aceptar&lt;/button></code></p>
+									  </div>
+									</div>
+								</div>
+							</div>
+							
+							  <div class="col-6" id="cardJS">
+								<div id="tabs_btn_1-html" class="bel-card bel-full-height" >
+									<div class="grid-row">
+									  
+									  <div class="col-12">
+										<pre style="margin:0;">/*Nothing here*/</pre>
+									  </div>
+									</div>
+									
+								</div>
+								</div>
+								<!-- Inicia las esecificaciones-->
+								<div class="col-12 margin-top-m">
+								<h1 class="bel-typography bel-typography-h4">Especificaciones</h1>
+								</div>
+								<div class="col-12 ">
+								<div id="tabs_btn_1-html" class="bel-card " >
+									<div class="grid-row">
+									  <div class="col-12">
+		
+
+		<h4 class="bel-typography bel-typography-h4">Habilitado</h4>
+        <div class="margin-top-s margin-bottom-l">
+          <ol class="bel-list bel-typography_size-m">
+            <li class="bel-list__ordered-li">
+              Se deben utilizar las clases <code class="language-markup">bel-btn bel-btn-primary</code> para su correcta visualización.
+            </li>
+            <li class="bel-list__ordered-li">
+              Se debe agregar la clase <code class="language-markup">bel-btn-primary-active</code> para obtener el estado habilitado.
+            </li>
+          </ol>
+        </div>
+        <h4 class="bel-typography bel-typography-h4 margin-top-l">Inhabilitado</h4>
+        <div class="margin-top-s">
+          <ol class="bel-list bel-typography_size-m">
+            <li class="bel-list__ordered-li">
+              Se deben utilizar las clases <code class="language-markup">bel-btn bel-btn-primary</code> para su correcta visualización.
+            </li>
+            <li class="bel-list__ordered-li">
+              Se debe agregar la clase <code class="language-markup">bel-btn-primary-disabled</code> para obtener el estado inhabilitado.
+            </li>
+          </ol>
+        </div>
+		
+									  </div>
+									</div>
+									
+								</div>
+								</div>
+								<!--finalizan las especificaciones -->
+								<div class="col-12 display-flex justify-content-center margin-top-l"> <!--mas ejemplos -->
+									<a id="btn_more_link" class="bel-typography bel-typography-link bel-typography_size-m">M&aacute;s ejemplos <span class="icon-main icon-arrow-down icon-main__xs"></span></a>
+								</div>						
+								
+							</div>
+						</div>
+					</div>
+					</div>
+					
+				</div>
+			</div>
+			<script>
+				 function lee_json() {
+            $BLUEJQuery.getJSON("/blue_version_history.json", function(datos) {
+                alert("Dato: " + datos);
+            
+            });
+        }
+		$BLUEJQuery( document ).ready(function(){
+			lee_json()
+$BLUEJQuery("#checkboxHTML").prop("checked",true);
+$BLUEJQuery("#checkboxJS").prop("checked", true);
+function getComponentVersion(componentName){
+	var version="0.0";
+	$BLUEJQuery(versionamientoBlue.Versionamiento.VersionActual.Componentes).each(function () {
+		if(this.Nombre==componentName){
+			version=this.Version;
+		}	     
+	});
+
+return version;
+}
+$BLUEJQuery("#versionText").html($BLUEJQuery("#versionText").text()+" "+getComponentVersion("Botones"));
+
+
+		});
+		function changeCard(){
+		var tagHTML= $BLUEJQuery("#checkboxHTML");
+		var tagJS= $BLUEJQuery("#checkboxJS");
+		
+		if(tagHTML.prop("checked") && tagJS.prop("checked")){
+		$BLUEJQuery("#cardHTML").removeClass("col-12 display-none").addClass("col-6");
+		$BLUEJQuery("#cardJS").removeClass("col-12 display-none").addClass("col-6");
+		
+		}
+		else if(tagHTML.prop("checked") && !tagJS.prop("checked")){
+		$BLUEJQuery("#cardHTML").removeClass("col-6 display-none").addClass("col-12");
+		$BLUEJQuery("#cardJS").removeClass("col-12 col-6").addClass("display-none");
+		}
+		else if(!tagHTML.prop("checked") && tagJS.prop("checked")){
+		$BLUEJQuery("#cardHTML").removeClass("col-12 col-6").addClass("display-none");
+		$BLUEJQuery("#cardJS").removeClass("col-6 display-none").addClass("col-12");
+		}else{
+		$BLUEJQuery("#cardHTML").removeClass("col-12 col-6").addClass("display-none");
+		$BLUEJQuery("#cardJS").removeClass("col-12 col-6").addClass("display-none");
+		}
+		
+		}
+	</script>
+			
+	</body>
+</html>
