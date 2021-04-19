@@ -61,7 +61,7 @@
 		  options.push("<option value='"+releaseVersion+"'>"+releaseVersion+"</option>");
 		});
 		options.reverse();
-			var select= "<div class='grid-row margin-bottom-s'><div class='col-3'><select onchange='componentSelectAct("+this.Id+")' id='"+this.Id+"Releases'>"+options.join('')+"</select></div></div>"
+			var select= "<div class='grid-row margin-bottom-s'><div class='col-3'><select onchange='releaseSelectAct("+this.Id+")' id='"+this.Id+"Releases'>"+options.join('')+"</select></div></div>"
 		$BLUEJQuery(container).append(select);
 		
 		
@@ -70,7 +70,6 @@
 		
 		//this.printChangeComponent();
 		
-		var plugin=this;
 		$BLUEJQuery("#"+this.Id+"Releases").blueSelect({
 			disabled:false,
 			language:"es",
@@ -81,7 +80,7 @@
 	createViewComponent: function(){
 		$BLUEJQuery("#"+this.Id).addClass("position-relative");
 		var container = $BLUEJQuery("<div id='" + this.Id + "ComponentContainer' class='bel-position-relative bel-card' ></div>");
-		var select= "<div class='grid-row margin-bottom-s'><div class='col-6'><select onchange='componentSelectAct("+this.Id+")' id='"+this.Id+"Components'>"
+		var select= "<div class='grid-row margin-bottom-s'><div class='col-4'><select onchange='componentSelectAct("+this.Id+")' id='"+this.Id+"Components'>"
 		$BLUEJQuery.each(this.versionBlueSettings.data.Versionamiento.Componentes, function (ite, component){
 		  select+="<option value='"+component.Nombre+"'>"+component.Nombre+"</option>";
 		});
@@ -101,12 +100,10 @@
 		});
 	},
 	printChangeComponent: function(){
-		$BLUEJQuery("#"+this.Id+"ContainerChange").remove();
+		$BLUEJQuery("#"+this.Id+"ContainerChangeComponent").remove();
 		var plugin=this;
-		var containerChange = $BLUEJQuery("<div id='" + this.Id + "ContainerChange' class='grid-container' ></div>");
-
+		var containerChange = $BLUEJQuery("<div id='" + this.Id + "ContainerChangeComponent' class='bel-grid-container' ></div>");
 		$BLUEJQuery.each(this.getChangeLogComponent($BLUEJQuery("#"+this.Id+"Components").val()), function (ite, change){
-			
 		  var Pase= "<div class='grid-row'><div class='col-12 '><p class='bel-typography bel-typography-p font-weight-semibold'>Pase: </p> <p class='bel-typography bel-typography-p'>"+change.Pase+"</p></div></div>" 
 		  var Fecha= "<div class='grid-row'><div class='col-12 '><p class='bel-typography bel-typography-p font-weight-semibold'>Fecha: </p> <p class='bel-typography bel-typography-p'>"+change.Fecha+"</p></div></div>" 
 		  var Version= "<div class='grid-row'><div class='col-12 '><p class='bel-typography bel-typography-p font-weight-semibold'>Versión: </p> <p class='bel-typography bel-typography-p'>"+change.Version+"</p></div></div>" 
@@ -120,10 +117,36 @@
 		  
 		  var changeHTML= "<div class='grid-row margin-bottom-s'>"+
 		  "<div class='col-12'><div class='bel-card'>"+Pase+Fecha+Version+CambiosTitle+CambiosList+"</div></div></div>";
-		  $BLUEJQuery(containerChange).append(changeHTML);
+		  $BLUEJQuery(containerChange).prepend(changeHTML);
 		});
 		
 		$BLUEJQuery("#"+this.Id+"ComponentContainer").append(containerChange);
+		
+	},
+	printChangeRelease: function(){
+		
+		$BLUEJQuery("#"+this.Id+"ContainerChangeRelease").remove();
+		var plugin=this;
+		var containerChangeRelease = $BLUEJQuery("<div id='" + this.Id + "ContainerChangeRelease' class='bel-grid-container' ></div>");
+		$BLUEJQuery.each(this.getChangeLogComponent($BLUEJQuery("#"+this.Id+"Components").val()), function (ite, change){
+		  var Pase= "<div class='grid-row'><div class='col-12 '><p class='bel-typography bel-typography-p font-weight-semibold'>Pase: </p> <p class='bel-typography bel-typography-p'>"+change.Pase+"</p></div></div>" 
+		  var Fecha= "<div class='grid-row'><div class='col-12 '><p class='bel-typography bel-typography-p font-weight-semibold'>Fecha: </p> <p class='bel-typography bel-typography-p'>"+change.Fecha+"</p></div></div>" 
+		  var Version= "<div class='grid-row'><div class='col-12 '><p class='bel-typography bel-typography-p font-weight-semibold'>Versión: </p> <p class='bel-typography bel-typography-p'>"+change.Version+"</p></div></div>" 
+		  var CambiosTitle="<div class='grid-row'><div class='col-12 '><p class='bel-typography bel-typography-p font-weight-semibold'>Cambios: </p></div></div>"
+		  var CambiosList="<div class='grid-row'><div class='col-12'><ul class='bel-list'>";
+		  
+		  $BLUEJQuery.each(plugin.getListChangeHistory(change.Cambios), function (e, itemChange){
+			  CambiosList=CambiosList+"<li class='bel-list__unordered-li'>"+itemChange+"</li>";
+		  });
+		 CambiosList=CambiosList+"</ul></div></div>";
+		  
+		  var changeHTML= "<div class='grid-row margin-bottom-s'>"+
+		  "<div class='col-12'><div class='bel-card'>"+Pase+Fecha+Version+CambiosTitle+CambiosList+"</div></div></div>";
+		  $BLUEJQuery(containerChangeRelease).prepend(changeHTML);
+		});
+		
+		$BLUEJQuery("#"+this.Id+"ComponentContainer").append(containerChangeRelease);
+		
 		
 	},
 	getListChangeHistory: function (Cambios){
@@ -246,7 +269,9 @@
 
 function componentSelectAct(plugin){
 	$BLUEJQuery("#"+plugin.id).versionBlue("printChangeComponent");
-
+}
+function releaseSelectAct(plugin){
+	$BLUEJQuery("#"+plugin.id).versionBlue("printChangeComponent");
 }
 function genericPlugin(pluginName,options,args,GenericFunction,elemt){
 
