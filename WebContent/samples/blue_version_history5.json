@@ -1,0 +1,748 @@
+{
+"Versionamiento":{
+	"Componentes":[
+		{"Nombre":"Adjuntar archivos"},
+		{"Nombre":"Botones"},
+		{"Nombre":"Campos de texto(Inputs)"	},
+		{"Nombre":"TextArea"},
+		{"Nombre":"Contenedor con scroll"},
+		{"Nombre":"Dropdown(Combos)"},
+		{"Nombre":"Radio buttons"},
+		{"Nombre":"Checkbox"},
+		{"Nombre":"Switch"},
+		{"Nombre":"Datepicker"},
+		{"Nombre":"Menú"},
+		{"Nombre":"Menú comparativo"},
+		{"Nombre":"Selector visual"},
+		{"Nombre":"Iconos"},
+		{"Nombre":"Barra de progreso"},
+		{"Nombre":"Conteo regresivo"},
+		{"Nombre":"Loading"},
+		{"Nombre":"Wizard"},
+		{"Nombre":"Mensajes de Alerta(Cintillos de alerta)"},
+		{"Nombre":"Cintillos (Cintillos de venta)"},
+		{"Nombre":"Destacado"},
+		{"Nombre":"Tooltip"},
+		{"Nombre":"Listas(List)"},
+		{"Nombre":"Breadcrumbs"},
+		{"Nombre":"Paginador"},
+		{"Nombre":"Pestañas"},
+		{"Nombre":"Buscador"},
+		{"Nombre":"Modal"},
+		{"Nombre":"Tablas"},
+		{"Nombre":"Tipografía"},
+		{"Nombre":"Track vertical"},
+		{"Nombre":"Header"},
+		{"Nombre":"SideBar"},
+		{"Nombre":"Footer"}
+	],
+	"Releases":[
+ 		{
+ 		"Fecha": "02/02/2021",
+ 		"X":"2",
+ 		"Y":"0",
+ 		"Z":"0",
+ 		"Pase":"Version inicial(CRI-029594)",
+		"CambiosBlue":[
+			{"id":"CB-1517",
+			"linkJira":"https://jira.corp.redbac.com/browse/CB-1517",
+			"cambios":["Se crea la version inicial de BLUE y sus componentes"]
+			}
+		],
+		"Componentes":[
+			{"Nombre":"Adjuntar archivos",
+			"Y":"1",
+			"Z":"0",
+			"Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1517",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1517",
+						"cambios":["Se crea la version inicial de BLUE y sus componentes"]
+					}
+				]}]
+			},
+			{"Nombre":"Botones",
+			"Y":"1",
+			"Z":"0",
+			"Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1517",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1517",
+						"cambios":["Se crea la version inicial de BLUE y sus componentes"]
+					}
+				]}]
+			},
+			{"Nombre":"Campos de texto(Inputs)",
+			 "Y":"1",
+			 "Z":"0",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1517",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1517",
+						"cambios":["Se crea la version inicial de BLUE y sus componentes"]
+					}
+				]}]
+			},
+			{"Nombre":"TextArea",
+			 "Y":"1",
+			 "Z":"0",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1517",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1517",
+						"cambios":["Se crea la version inicial de BLUE y sus componentes"]
+					}
+				]}]
+			},
+			{"Nombre":"Contenedor con scroll",
+			 "Y":"1",
+			 "Z":"0",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1517",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1517",
+						"cambios":["Se crea la version inicial de BLUE y sus componentes"]
+					}
+				]}]
+			},
+			{"Nombre":"Dropdown(Combos)",
+			 "Y":"1",
+			 "Z":"0",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1517",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1517",
+						"cambios":["Se crea la version inicial de BLUE y sus componentes"]
+					}
+				]}]
+			},
+			{"Nombre":"Radio buttons",
+			 "Y":"1",
+			 "Z":"0",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1517",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1517",
+						"cambios":["Se crea la version inicial de BLUE y sus componentes"]
+					}
+				]}]
+			},
+			{"Nombre":"Checkbox",
+			 "Y":"1",
+			 "Z":"0",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1517",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1517",
+						"cambios":["Se crea la version inicial de BLUE y sus componentes"]
+					}
+				]}]
+			},
+			{"Nombre":"Switch",
+			 "Y":"1",
+			 "Z":"0",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1517",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1517",
+						"cambios":["Se crea la version inicial de BLUE y sus componentes"]
+					}
+				]}]
+			},
+			{"Nombre":"Datepicker",
+			 "Y":"1",
+			 "Z":"0",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1517",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1517",
+						"cambios":["Se crea la version inicial de BLUE y sus componentes"]
+					}
+				]}]
+			},
+			{"Nombre":"Menú",
+			 "Y":"1",
+			 "Z":"0",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1517",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1517",
+						"cambios":["Se crea la version inicial de BLUE y sus componentes"]
+					}
+				]}]
+			},
+			{"Nombre":"Menú comparativo",
+			 "Y":"1",
+			 "Z":"0",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1517",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1517",
+						"cambios":["Se crea la version inicial de BLUE y sus componentes"]
+					}
+				]}]
+			},
+			{"Nombre":"Selector visual",
+			 "Y":"1",
+			 "Z":"0",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1517",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1517",
+						"cambios":["Se crea la version inicial de BLUE y sus componentes"]
+					}
+				]}]
+			},
+			{"Nombre":"Iconos",
+			 "Y":"1",
+			 "Z":"0",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1517",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1517",
+						"cambios":["Se crea la version inicial de BLUE y sus componentes"]
+					}
+				]}]
+			},
+			{"Nombre":"Barra de progreso",
+			 "Y":"1",
+			 "Z":"0",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1517",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1517",
+						"cambios":["Se crea la version inicial de BLUE y sus componentes"]
+					}
+				]}]
+			},
+			{"Nombre":"Conteo regresivo",
+			 "Y":"1",
+			 "Z":"0",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1517",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1517",
+						"cambios":["Se crea la version inicial de BLUE y sus componentes"]
+					}
+				]}]
+			},
+			{"Nombre":"Loading",
+			 "Y":"1",
+			 "Z":"0",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1517",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1517",
+						"cambios":["Se crea la version inicial de BLUE y sus componentes"]
+					}
+				]}]
+			},
+			{"Nombre":"Wizard",
+			 "Y":"1",
+			 "Z":"0",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1517",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1517",
+						"cambios":["Se crea la version inicial de BLUE y sus componentes"]
+					}
+				]}]
+			},
+			{"Nombre":"Mensajes de Alerta(Cintillos de alerta)",
+			 "Y":"1",
+			 "Z":"0",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1517",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1517",
+						"cambios":["Se crea la version inicial de BLUE y sus componentes"]
+					}
+				]}]
+			},
+			{"Nombre":"Cintillos (Cintillos de venta)",
+			 "Y":"1",
+			 "Z":"0",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1517",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1517",
+						"cambios":["Se crea la version inicial de BLUE y sus componentes"]
+					}
+				]}]
+			},
+			{"Nombre":"Destacado",
+			 "Y":"1",
+			 "Z":"0",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1517",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1517",
+						"cambios":["Se crea la version inicial de BLUE y sus componentes"]
+					}
+				]}]
+			},
+			{"Nombre":"Tooltip",
+			 "Y":"1",
+			 "Z":"0",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1517",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1517",
+						"cambios":["Se crea la version inicial de BLUE y sus componentes"]
+					}
+				]}]
+			},
+			{"Nombre":"Listas(List)",
+			 "Y":"1",
+			 "Z":"0",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1517",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1517",
+						"cambios":["Se crea la version inicial de BLUE y sus componentes"]
+					}
+				]}]
+			},
+			{"Nombre":"Breadcrumbs",
+			 "Y":"1",
+			 "Z":"0",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1517",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1517",
+						"cambios":["Se crea la version inicial de BLUE y sus componentes"]
+					}
+				]}]
+			},
+			{"Nombre":"Paginador",
+			 "Y":"1",
+			 "Z":"0",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1517",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1517",
+						"cambios":["Se crea la version inicial de BLUE y sus componentes"]
+					}
+				]}]
+			},
+			{"Nombre":"Pestañas",
+			 "Y":"1",
+			 "Z":"0",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1517",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1517",
+						"cambios":["Se crea la version inicial de BLUE y sus componentes"]
+					}
+				]}]
+			},
+			{"Nombre":"Buscador",
+			 "Y":"1",
+			 "Z":"0",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1517",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1517",
+						"cambios":["Se crea la version inicial de BLUE y sus componentes"]
+					}
+				]}]
+			},
+			{"Nombre":"Modal",
+			 "Y":"1",
+			 "Z":"0",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1517",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1517",
+						"cambios":["Se crea la version inicial de BLUE y sus componentes"]
+					}
+				]}]
+			},
+			{"Nombre":"Tablas",
+			 "Y":"1",
+			 "Z":"0",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1517",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1517",
+						"cambios":["Se crea la version inicial de BLUE y sus componentes"]
+					}
+				]}]
+			},
+			{"Nombre":"Tipografía",
+			 "Y":"1",
+			 "Z":"0",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1517",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1517",
+						"cambios":["Se crea la version inicial de BLUE y sus componentes"]
+					}
+				]}]
+			},
+			{"Nombre":"Track vertical",
+			 "Y":"1",
+			 "Z":"0",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1517",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1517",
+						"cambios":["Se crea la version inicial de BLUE y sus componentes"]
+					}
+				]}]
+			},
+			{"Nombre":"Elemento salir",
+			 "Y":"1",
+			 "Z":"0",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1523",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1523",
+						"cambios":["Se agrega focus a el elemento salir"]
+					}
+				]}]
+			}
+		]},	
+		{
+		"Fecha":"04/11/2020",
+		"X":"0",
+ 		"Y":"0",
+ 		"Z":"1",
+		"Pase":"CRI-029512",
+		"CambiosBlue":[
+			{"id":"CB-1498",
+				"linkJira":"https://jira.corp.redbac.com/browse/CB-1498",
+				"cambios":["Se minifica el bel-main-scripts.js"]
+			},
+			{"id":"CB-1222",
+				"linkJira":"https://jira.corp.redbac.com/browse/CB-1222",
+				"cambios":["Se actualizan las clases utilitarias para cumplir con el estandar semántico"]
+			}
+		],
+		"Componentes":[
+			{"Nombre":"Dropdown(Combos)",
+			 "Y":"0",
+			 "Z":"1",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1448",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1448",
+						"cambios":["Adaptación combo tipo modal para resoluciones pequeñas(XS,S)"]
+					}
+				]}]
+			},
+			{"Nombre":"Tablas",
+			 "Y":"0",
+			 "Z":"1",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1514",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1514",
+					"cambios":["Se arregla problema con ubicación del tooltip en botones dentro de caption de la tabla para Safari"]
+					}
+				]}]
+			}
+		]},
+		{
+		"Fecha":"02/02/2021",
+		"X":"0",
+ 		"Y":"1",
+ 		"Z":"0",
+		"Pase":"CRI-029594",
+		"CambiosBlue":[
+			{"id":"",
+				"linkJira":"",
+				"cambios":[""]
+			}
+		],
+		"Componentes":[
+			{"Nombre":"Header",
+			 "Y":"1",
+			 "Z":"0",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1506",
+					"linkJira":"https://jira.corp.redbac.com/browse/CB-1506",
+					"cambios":["Se agregan estilos para el menú superior o header"]
+					}
+				]}]
+			},				
+			{"Nombre":"Radio buttons",
+			 "Y":"0",
+			 "Z":"1",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1417",
+					"linkJira":"https://jira.corp.redbac.com/browse/CB-1417",
+					"cambios":["Se agrega hover y focus a los radio buttons"]
+					}
+				]}]
+			},
+			{"Nombre":"Checkbox",
+			 "Y":"0",
+			 "Z":"1",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1417",
+					"linkJira":"https://jira.corp.redbac.com/browse/CB-1417",
+					"cambios":["Se agrega hover y focus al checkbox"]
+					}
+				]}]
+			},				   
+			{"Nombre":"Menú comparativo",
+			 "Y":"0",
+			 "Z":"1",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1417",
+					"linkJira":"https://jira.corp.redbac.com/browse/CB-1417",
+					"cambios":["Se crea hover y focus a la caja y a los radio buttons"]
+					}
+				]}]
+			},
+			{"Nombre":"Botones",
+			"Y":"0",
+			"Z":"1",
+			"Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1524",
+					"linkJira":"https://jira.corp.redbac.com/browse/CB-1524",
+					"cambios":["Se crea el nuevo botón: botón de acción y se depreca los botones ternarios"]
+					}
+				]}]
+			},
+			{"Nombre":"Iconos",
+			 "Y":"0",
+			 "Z":"1",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1554",
+					"linkJira":"https://jira.corp.redbac.com/browse/CB-1554",
+					"cambios":["Se crea agregan 24 iconos nuevos y se corrigen la alineación de algunos existentes"]
+					},
+					{"id":"CB-1459",
+					"linkJira":"https://jira.corp.redbac.com/browse/CB-1459",
+					"cambios":["Se crean clases utilitarias para darle color a los iconos en 18 variedades"]
+					}
+				]}]
+			},
+			{"Nombre":"Dropdown(combos)",
+			"Y":"0",
+			"Z":"1",
+			"Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1478",
+					"linkJira":"https://jira.corp.redbac.com/browse/CB-1478",
+					"cambios":["Se agrega focus a label y a las opciones del combo"]
+					}
+				]}]
+			},
+			{"Nombre":"SideBar",
+			 "Y":"1",
+			 "Z":"0",
+			 "Cambios":[
+			   {
+				"historias":[
+					{"id":"CB-1510",
+					"linkJira":"https://jira.corp.redbac.com/browse/CB-1510",
+					"cambios":["Se crean clases para darle estilos al menú de BeL"]
+					}
+				]}]
+			},	
+			{"Nombre":"Buscador",
+			 "Y":"0",
+			 "Z":"1",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1479",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1479",
+						"cambios":["BLUE - Focus Barra de bsqueda"]
+					}
+				]}]
+			}													
+		]},
+		{
+		"Fecha":"16/03/2021",
+		"X":"0",
+ 		"Y":"1",
+ 		"Z":"0",
+		"Pase":"PN-0000475",
+		"CambiosBlue":[
+			{"id":"CB-1296",
+			"linkJira":"https://jira.corp.redbac.com/browse/CB-1296",
+			"cambios":["Se cambia arquitectura para alinearse al estandar ITCSS"]
+			},
+			{"id":"CB-1585",
+			"linkJira":"https://jira.corp.redbac.com/browse/CB-1585",
+			"cambios":["Se cambia la función para crear margin y padding para que funcione con el lessc del jenkis"]
+			}
+		],
+		"Componentes":[]},	
+		
+		{
+		"Fecha":"24/04/2021",
+		"X":"0",
+ 		"Y":"0",
+ 		"Z":"1",
+		"Pase":"PN-0001013",
+		"CambiosBlue":[
+			{"id":"",
+			"linkJira":"",
+			"cambios":[""]
+			}
+		],
+		"Componentes":[
+			{"Nombre":"Mensajes de Alerta(Cintillos de alerta)",
+			 "Y":"0",
+			 "Z":"1",
+			 "Cambios":[
+				{
+				"historias":[{"id":"CB-1615",
+					"linkJira":"https://jira.corp.redbac.com/browse/CB-1615",
+					"cambios":["se corrigen problemas visuales de los mensajes de alerta"]
+					}
+				]}]
+			},
+			{"Nombre":"Header",
+			 "Y":"0",
+			 "Z":"1",
+			 "Cambios":[
+				{
+				"historias":[{"id":"CB-1630",
+					"linkJira":"https://jira.corp.redbac.com/browse/CB-1630",
+					"cambios":["Se agrega la funcionalidad de cambio de estilo para banca patrimonial"]
+					}
+				]}]
+			},
+			{"Nombre":"SideBar",
+			 "Y":"0",
+			 "Z":"1",
+			 "Cambios":[
+				{
+				"historias":[{"id":"CB-1630",
+					"linkJira":"https://jira.corp.redbac.com/browse/CB-1630",
+					"cambios":["Se agrega la funcionalidad de cambio de estilo para banca patrimonial"]
+					}
+				]}]
+			},
+			{"Nombre":"Footer",
+			 "Y":"1",
+			 "Z":"0",
+			 "Cambios":[
+				{
+				"historias":[{"id":"CB-1630",
+					"linkJira":"https://jira.corp.redbac.com/browse/CB-1630",
+					"cambios":["Se agrega la funcionalidad de cambio de estilo para banca patrimonial"]
+					}
+				]}]
+			}
+		]},
+		{
+		"Fecha":"22/06/2021",
+		"X":"0",
+ 		"Y":"0",
+ 		"Z":"1",
+		"Pase":"PN-0001364",
+		"CambiosBlue":[
+			{"id":"",
+			"linkJira":"",
+			"cambios":[""]
+			}
+		],
+		"Componentes":[
+			{"Nombre":"Listas(List)",
+			 "Y":"0",
+			 "Z":"1",
+			 "Cambios":[
+				{
+				"historias":[{"id":"CB-1635",
+					"linkJira":"https://jira.corp.redbac.com/browse/CB-1635",
+					"cambios":["se corrigen problemas visuales de las listas, en espacio entre el numero y el texto"]
+					}
+				]}]
+			},
+           {"Nombre":"Iconos",
+			 "Y":"1",
+			 "Z":"0",
+			 "Cambios":[
+				{
+				"historias":[
+					{"id":"CB-1453",
+					"linkJira":"https://jira.corp.redbac.com/browse/CB-1453",
+					"cambios":["se deprecan clases no utilizadas de iconos con escrutura deprecada (más detalle de clases deprecadas en la historia)"]
+					}
+				]}]
+			}
+			
+		]},
+		{
+			"Fecha":"13/07/2021",
+			"X":"0",
+			 "Y":"1",
+			 "Z":"0",
+			"Pase":"PN-0001786",
+			"CambiosBlue":[
+				{"id":"",
+				"linkJira":"",
+				"cambios":[""]
+				}
+			],
+			"Componentes":[
+				{"Nombre":"Listas(List)",
+				 "Y":"1",
+				 "Z":"0",
+				 "Cambios":[
+					{
+					"historias":[{"id":"CB-1751",
+						"linkJira":"https://jira.corp.redbac.com/browse/CB-1751",
+						"cambios":["Se depreca el componente antiguo y se genera una nueva version con bullets azules y con una estructura de de HTML distinta"]
+						}
+					]}]
+				}
+				
+			]}
+		
+	]}
+}
